@@ -1,0 +1,5 @@
+_project/
+_shot/
+.claude/
+.DS_Store
+*.log
