@@ -4,16 +4,16 @@
    ════════════════════════════════════════════════════════════════ */
 
 :root{
-  --dark:      #0D1117;   /* базовый графит */
-  --dark-2:    #10161E;   /* чуть светлее — панельные секции */
-  --panel:     #151D27;   /* карточки на тёмном */
-  --paper:     #F2F0EA;   /* «чертёжная бумага» */
+  --dark:      #171F2A;   /* базовый графит — осветлён 28.08.2026 */
+  --dark-2:    #1D2734;   /* чуть светлее — панельные секции */
+  --panel:     #243040;   /* карточки на тёмном */
+  --paper:     #F5F3EE;   /* «чертёжная бумага» */
   --paper-2:   #E9E6DC;
   --ink:       #10161E;   /* текст на бумаге */
   --white:     #F4F7FB;
-  --muted-d:   rgba(214,224,236,.66);  /* приглушённый текст на тёмном */
+  --muted-d:   rgba(214,224,236,.74);  /* приглушённый текст на тёмном */
   --muted-l:   rgba(16,22,30,.62);     /* приглушённый на бумаге */
-  --line-d:    rgba(214,224,236,.10);
+  --line-d:    rgba(214,224,236,.15);
   --line-l:    rgba(16,22,30,.14);
   --yellow:    #FFC21C;   /* полиуретан */
   --yellow-2:  #FFAD05;
@@ -84,10 +84,10 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 /* ── шапка (без backdrop-filter — осознанно!) ─────────────────── */
 .header{
   position:fixed; top:0; left:0; right:0; z-index:100;
-  background:rgba(13,17,23,.55);
+  background:rgba(23,31,42,.62);
   transition:background-color .3s, box-shadow .3s;
 }
-.header.scrolled{ background:rgba(13,17,23,.96); box-shadow:0 1px 0 var(--line-d); }
+.header.scrolled{ background:rgba(23,31,42,.96); box-shadow:0 1px 0 var(--line-d); }
 .hdr-in{
   width:min(1320px, 100% - 48px); margin-inline:auto;
   height:var(--hdr-h);
@@ -482,7 +482,7 @@ body.menu-open{ overflow:hidden; }
 .doc:hover .doc-fig::after{ opacity:1; }
 .doc-pages{
   position:absolute; left:14px; bottom:14px;
-  background:rgba(13,17,23,.86); color:var(--white);
+  background:rgba(23,31,42,.88); color:var(--white);
   font-family:var(--ff-d); font-size:11.5px; font-weight:600;
   letter-spacing:.1em; text-transform:uppercase; padding:6px 11px;
 }
@@ -602,7 +602,7 @@ body.lbx-open{ overflow:hidden; }
 .fm-thanks{ margin-top:18px; font-size:15px; color:#7BE0A2; }
 
 /* ── футер ───────────────────────────────────────────────────── */
-.footer{ background:#0A0E13; border-top:1px solid var(--line-d); padding:44px 0; }
+.footer{ background:#121924; border-top:1px solid var(--line-d); padding:44px 0; }
 .foot-in{ display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
 .foot-logo-w{ display:inline-flex; align-items:flex-start; }
 .foot-logo{ width:164px; }
