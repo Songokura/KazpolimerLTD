@@ -95,6 +95,21 @@
       'adv.badge': 'Продукция производится в Казахстане',
       'cl.kicker': 'Клиенты', 'cl.h2': 'Достоинства нашей продукции оценили',
       'cl.lead': 'КазМунайГаз, ERG, KAZ Minerals, KMK Munai и другие промышленные предприятия Казахстана.',
+      'doc.kicker': 'Документы', 'doc.h2': 'Официально в реестре казахстанских товаропроизводителей',
+      'doc.lead': '18 наименований нашей продукции внесены в государственный реестр отечественных товаропроизводителей с долей внутристрановой ценности 86,12%. Реестр подтверждает казахстанское происхождение изделий — это важно при закупках с требованием местного содержания.',
+      'doc.st1': 'наименований продукции в реестре',
+      'doc.st2': 'доля внутристрановой ценности (ДВЦ)',
+      'doc.st3': 'благодарственное письмо палаты «Атамекен»',
+      'doc.d1a': 'Открыть выписку из реестра', 'doc.d1p': '2 страницы',
+      'doc.d1m': 'БИН 151040025562 · выписка от 02.08.2026',
+      'doc.d1t': 'Выписка из реестра казахстанских товаропроизводителей',
+      'doc.d1x': 'В реестр внесены манжеты, валы, катки, шестерни, пластины, опорные части, сальники, мягкие соединения, брус, патрубки, сита, конвейерные ролики, сайлентблоки и колёса — с заявленной производственной мощностью по каждой позиции.',
+      'doc.d2a': 'Открыть благодарственное письмо «Атамекен»',
+      'doc.d2m': 'Актюбинская область · 2022 год',
+      'doc.d2t': 'Алғыс хат Палаты предпринимателей «Атамекен»',
+      'doc.d2x': 'Благодарственное письмо Палаты предпринимателей Актюбинской области — за активное участие в региональной выставке-конкурсе «Қазақстанның үздік тауары» («Лучший товар Казахстана»). Подписано директором палаты Д. Бекбауовой.',
+      'doc.view': 'Смотреть', 'doc.pdf': 'Скачать PDF',
+      'lbx.close': 'Закрыть', 'lbx.prev': 'Предыдущая страница', 'lbx.next': 'Следующая страница',
       'ct.kicker': 'Контакты', 'ct.h2': 'Обсудим вашу задачу',
       'ct.phone': 'Телефон', 'ct.addr': 'Адреса',
       'ct.addr1': 'Актобе, пр. Санкибай батыра, 14Б — производство',
@@ -206,6 +221,21 @@
       'adv.badge': 'Өнім Қазақстанда өндіріледі',
       'cl.kicker': 'Клиенттер', 'cl.h2': 'Өніміміздің артықшылықтарын бағалағандар',
       'cl.lead': 'ҚазМұнайГаз, ERG, KAZ Minerals, KMK Munai және Қазақстанның басқа да өнеркәсіп кәсіпорындары.',
+      'doc.kicker': 'Құжаттар', 'doc.h2': 'Қазақстандық тауар өндірушілер тізілімінде — ресми түрде',
+      'doc.lead': 'Өніміміздің 18 атауы отандық тауар өндірушілердің мемлекеттік тізіліміне енгізілген, ішкі құндылық үлесі — 86,12%. Тізілім бұйымдардың қазақстандық шығу тегін растайды — жергілікті қамту талабы бар сатып алуларда бұл маңызды.',
+      'doc.st1': 'тізілімге енгізілген өнім атауы',
+      'doc.st2': 'ішкі құндылық үлесі (ІҚҮ)',
+      'doc.st3': '«Атамекен» палатасының алғыс хаты',
+      'doc.d1a': 'Тізілімнен үзіндіні ашу', 'doc.d1p': '2 бет',
+      'doc.d1m': 'БСН 151040025562 · 02.08.2026 берілген үзінді',
+      'doc.d1t': 'Қазақстандық тауар өндірушілер тізілімінен үзінді',
+      'doc.d1x': 'Тізілімге манжеттер, біліктер, өнеркәсіптік катоктар, тісті дөңгелектер, пластиналар, тіреу бөліктері, сальниктер, иілгіш қосылыстар, брус, келте құбырлар, електер, конвейер роликтері, сайлентблоктар және дөңгелектер енгізілген — әрқайсысы бойынша жарияланған өндірістік қуатымен.',
+      'doc.d2a': '«Атамекен» алғыс хатын ашу',
+      'doc.d2m': 'Ақтөбе облысы · 2022 жыл',
+      'doc.d2t': '«Атамекен» кәсіпкерлер палатасының алғыс хаты',
+      'doc.d2x': 'Ақтөбе облысы кәсіпкерлер палатасының алғыс хаты — «Қазақстанның үздік тауары» өңірлік көрме-байқауына белсенді қатысқаны үшін. Палата директоры Д. Бекбауова қол қойған.',
+      'doc.view': 'Қарау', 'doc.pdf': 'PDF жүктеу',
+      'lbx.close': 'Жабу', 'lbx.prev': 'Алдыңғы бет', 'lbx.next': 'Келесі бет',
       'ct.kicker': 'Байланыс', 'ct.h2': 'Мәселеңізді талқылайық',
       'ct.phone': 'Телефон', 'ct.addr': 'Мекенжайлар',
       'ct.addr1': 'Ақтөбе, Сәңкібай батыр даңғылы, 14Б — өндіріс',
@@ -310,7 +340,7 @@
   }
 
   /* лёгкий каскад для сеток */
-  document.querySelectorAll('.dir-grid, .prod-grid, .adv-grid, .steps, .cl-grid, .chips-lg').forEach(function (grid) {
+  document.querySelectorAll('.dir-grid, .prod-grid, .adv-grid, .steps, .cl-grid, .chips-lg, .doc-stats, .doc-grid').forEach(function (grid) {
     Array.prototype.forEach.call(grid.children, function (child, i) {
       child.style.transitionDelay = (Math.min(i, 8) * 60) + 'ms';
     });
@@ -368,6 +398,79 @@
     /* Здесь Opus повесит gtag-конверсии звонка и перехода в WhatsApp */
   }
   document.addEventListener('click', onContactClick);
+
+  /* ═══════════ Просмотр документов (лайтбокс) ═══════════ */
+  var DOCS = {
+    reestr: {
+      cap: 'doc.d1t',
+      imgs: ['assets/docs/reestr-1.webp', 'assets/docs/reestr-2.webp']
+    },
+    atameken: {
+      cap: 'doc.d2t',
+      imgs: ['assets/docs/atameken.webp']
+    }
+  };
+
+  var lbx = document.getElementById('lbx');
+  if (lbx) {
+    var lbxImg = document.getElementById('lbxImg');
+    var lbxCap = document.getElementById('lbxCap');
+    var lbxNum = document.getElementById('lbxNum');
+    var lbxPrev = document.getElementById('lbxPrev');
+    var lbxNext = document.getElementById('lbxNext');
+    var lbxClose = document.getElementById('lbxClose');
+    var lbxDoc = null, lbxI = 0, lbxOpener = null;
+
+    function lbxRender() {
+      var d = DOCS[lbxDoc];
+      if (!d) return;
+      var multi = d.imgs.length > 1;
+      lbxImg.src = d.imgs[lbxI];
+      lbxImg.alt = I18N[curLang][d.cap] || '';
+      lbxCap.textContent = I18N[curLang][d.cap] || '';
+      lbxNum.textContent = multi ? (lbxI + 1) + ' / ' + d.imgs.length : '';
+      lbxPrev.hidden = !multi;
+      lbxNext.hidden = !multi;
+    }
+
+    function lbxOpen(name, opener) {
+      if (!DOCS[name]) return;
+      lbxDoc = name; lbxI = 0; lbxOpener = opener || null;
+      lbxRender();
+      lbx.hidden = false;
+      document.body.classList.add('lbx-open');
+      lbxClose.focus();
+    }
+
+    function lbxHide() {
+      lbx.hidden = true;
+      lbxImg.src = '';
+      document.body.classList.remove('lbx-open');
+      if (lbxOpener) { lbxOpener.focus(); lbxOpener = null; }
+    }
+
+    function lbxStep(delta) {
+      var d = DOCS[lbxDoc];
+      if (!d || d.imgs.length < 2) return;
+      lbxI = (lbxI + delta + d.imgs.length) % d.imgs.length;
+      lbxRender();
+    }
+
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest('[data-doc]');
+      if (trigger) { lbxOpen(trigger.getAttribute('data-doc'), trigger); return; }
+      if (!lbx.hidden && e.target === lbx) lbxHide();
+    });
+    lbxClose.addEventListener('click', lbxHide);
+    lbxPrev.addEventListener('click', function () { lbxStep(-1); });
+    lbxNext.addEventListener('click', function () { lbxStep(1); });
+    window.addEventListener('keydown', function (e) {
+      if (lbx.hidden) return;
+      if (e.key === 'Escape') lbxHide();
+      else if (e.key === 'ArrowLeft') lbxStep(-1);
+      else if (e.key === 'ArrowRight') lbxStep(1);
+    });
+  }
 
   /* ═══════════ Год в футере ═══════════ */
   var y = document.getElementById('year');
