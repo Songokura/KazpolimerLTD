@@ -19,6 +19,7 @@
   --yellow-2:  #FFAD05;
   --orange:    #FF7A1A;
   --grad-logo: linear-gradient(100deg,#2E7CD6 0%,#6C3FE0 55%,#A62BC4 100%);
+  --grad-ig:   linear-gradient(45deg,#F9CE34 5%,#EE2A7B 50%,#6228D7 95%);
   --ff-d: "Geologica","Segoe UI",sans-serif;
   --ff-t: "Onest","Segoe UI",sans-serif;
   --hdr-h: 76px;
@@ -78,6 +79,7 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 .btn-solid{ background:var(--yellow); color:var(--ink); }
 .btn-solid:hover{ background:var(--yellow-2); }
 .btn-wa{ background:#1FAF5C; color:#fff; }
+.btn-ig{ background:var(--grad-ig); color:#fff; }
 .btn-wa:hover{ background:#189A50; }
 .btn-full{ width:100%; }
 
@@ -107,6 +109,13 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 .nav a:hover{ color:var(--white); }
 .nav a:hover::after{ right:0; }
 .hdr-right{ display:flex; align-items:center; gap:16px; position:relative; z-index:110; }
+.hdr-ig{
+  display:grid; place-items:center; flex:0 0 auto;
+  width:38px; height:38px; border:1px solid var(--line-d); border-radius:3px;
+  color:var(--muted-d); position:relative; z-index:110;
+  transition:color .2s, border-color .2s, background-color .2s;
+}
+.hdr-ig:hover{ color:var(--ink); border-color:transparent; background:var(--grad-ig); }
 .hdr-call{
   font-family:var(--ff-d); font-weight:700; font-size:15px; white-space:nowrap;
   color:var(--white); border:1px solid var(--line-d);
@@ -325,6 +334,18 @@ body.menu-open{ overflow:hidden; }
 .p-card figcaption{ font-family:var(--ff-d); font-weight:600; font-size:15px; line-height:1.35; }
 
 /* номенклатура-чипсы */
+.ig-note{
+  margin-top:26px; display:flex; align-items:center; gap:14px;
+  background:var(--panel); border:1px solid var(--line-d); padding:18px 22px;
+  clip-path:polygon(var(--ch) 0,100% 0,100% calc(100% - var(--ch)),calc(100% - var(--ch)) 100%,0 100%,0 var(--ch));
+  transition:border-color .25s, transform .25s;
+}
+.ig-note:hover{ border-color:rgba(238,42,123,.55); transform:translateY(-2px); }
+.ig-ic{ display:grid; place-items:center; width:38px; height:38px; flex:0 0 auto;
+  background:var(--grad-ig); color:#fff; border-radius:9px; }
+.ig-tx{ font-family:var(--ff-d); font-weight:600; font-size:16px; flex:1; }
+.ig-ar{ flex:0 0 auto; color:var(--muted-d); transition:transform .25s; }
+.ig-note:hover .ig-ar{ transform:translateX(4px); }
 .nomen{ margin-top:44px; border-top:1px solid var(--line-d); padding-top:34px; }
 .nomen-t{ font-family:var(--ff-d); font-weight:600; font-size:15px; color:var(--muted-d);
   letter-spacing:.06em; text-transform:uppercase; margin-bottom:16px; }
@@ -573,6 +594,9 @@ body.lbx-open{ overflow:hidden; }
 .ct-v{ display:flex; flex-direction:column; gap:4px; }
 .ct-v a{ font-family:var(--ff-d); font-weight:600; font-size:19px; transition:color .2s; }
 .ct-v a:hover{ color:var(--yellow); }
+.ct-ig{ display:inline-flex; align-items:center; gap:9px; }
+.ct-ig svg{ flex:0 0 auto; }
+.ct-ig-x{ font-size:14px; color:var(--muted-d); margin-top:2px; }
 .ct-v p{ font-size:16px; }
 .ct-2gis{
   display:inline-flex; align-items:center; gap:12px; margin-top:24px;
@@ -611,27 +635,39 @@ body.lbx-open{ overflow:hidden; }
   font-family:var(--ff-d); font-weight:700; font-size:10px; line-height:1;
   color:var(--muted-d); margin-left:3px; margin-top:2px; flex:0 0 auto;
 }
+.foot-soc{ display:flex; gap:12px; flex-wrap:wrap; margin:4px 0 2px; }
+.foot-soc a{
+  display:inline-flex; align-items:center; gap:9px;
+  font-family:var(--ff-d); font-weight:600; font-size:14.5px;
+  color:var(--muted-d); border:1px solid var(--line-d);
+  padding:9px 15px; border-radius:3px;
+  transition:color .2s, border-color .2s, background-color .2s;
+}
+.foot-soc a:hover{ color:#fff; border-color:transparent; background:var(--grad-ig); }
+.foot-soc a:last-child:hover{ background:#1FAF5C; }
 .foot-org{ font-size:14.5px; color:var(--muted-d); }
 .foot-c{ font-size:13.5px; color:rgba(214,224,236,.4); }
 
 /* ════════════════════════════════════════════════════════════════
    АДАПТИВ.
-   Порог бургера и оверлея — ОДНО число: 1240px. 28.08.2026 поднят с 1200:
-   в переключателе появилась третья кнопка (EN), и замер getBoundingClientRect()
-   показал, что русская и казахская навигация перестаёт помещаться уже на 1220px.
+   Порог бургера и оверлея — ОДНО число: 1270px. История: 1200 → 1240 (третья
+   кнопка языка EN) → 1270 (иконка Instagram в шапке). Замер getBoundingClientRect()
+   на текущей вёрстке: минимум для навигации RU 1240, KZ 1250, EN 1180 — берём
+   казахский плюс запас.
    ════════════════════════════════════════════════════════════════ */
-@media (max-width:1240px){
+@media (max-width:1270px){
   .nav{ display:none; }
   .hdr-call{ display:none; }
+  .hdr-ig{ display:none; }
   .hdr-right{ margin-left:auto; }
   .burger{ display:flex; }
 }
-@media (min-width:1240.02px){
+@media (min-width:1270.02px){
   .mobmenu{ display:none !important; }
 }
 
 @media (max-width:960px){
-  .hero-in{ grid-template-columns:1fr; gap:48px; }
+  .hero-in{ grid-template-columns:minmax(0,1fr); gap:48px; }
   .hero-fig{ order:-1; width:min(420px,86%); margin-inline:auto; }
   .hero{ padding-top:calc(var(--hdr-h) + 40px); }
   .fut-body{ grid-template-columns:1fr; gap:44px; }
@@ -674,6 +710,26 @@ body.lbx-open{ overflow:hidden; }
   .nomen-cta{ flex-direction:column; align-items:stretch; text-align:center; }
   .hero-cta .btn{ flex:1 1 100%; }
   .ct-row{ grid-template-columns:1fr; gap:6px; }
+  .ig-note{ align-items:flex-start; gap:12px; padding:16px 18px; }
+  .ig-tx{ font-size:15px; }
   .marq{ transform:rotate(-2deg) scale(1.06); }
   .lead-form{ padding:26px 20px; }
+}
+
+/* Узкие телефоны (iPhone SE, 360×640 у Android).
+   Три кнопки языка + бургер перестают помещаться в строку шапки: при 20px паддингах
+   и логотипе 149px строка требует ~400px и бургер уезжает за правый край
+   (body{overflow-x:hidden} его не прокручивает, а обрезает). Ужимаем шапку. */
+@media (max-width:400px){
+  .hdr-in{ width:min(1320px, 100% - 32px); gap:10px; }
+  .brand img{ width:124px; }
+  .hdr-right{ gap:10px; }
+  .lang button{ padding:6px 9px; font-size:11px; letter-spacing:.04em; }
+  .burger{ width:40px; height:40px; }
+}
+
+/* 320px (SE 1-го поколения, обложка Fold): слово «промышленности» в h1 имеет
+   min-content 318px и распирает колонку шире .wrap — кнопки CTA обрезаются. */
+@media (max-width:345px){
+  h1{ font-size:29px; }
 }
