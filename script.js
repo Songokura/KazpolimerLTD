@@ -632,6 +632,13 @@
     counters.forEach(function (el) { cio.observe(el); });
   }
 
+  /* ═══════════ Конверсии Google Ads ═══════════ */
+  function fireConv(key) {
+    if (typeof gtag_report_conversion !== 'function' || !window.AW_CONV) return;
+    var sendTo = window.AW_CONV[key];
+    if (sendTo) gtag_report_conversion(undefined, sendTo);
+  }
+
   /* ═══════════ Форма → WhatsApp (без бэкенда) ═══════════ */
   var WA_NUMBER = '77072871313';
   var form = document.getElementById('zayavka');
@@ -649,9 +656,9 @@
     if (phone) lines.push(dict['wa.phone'] + ': ' + phone);
     lines.push(dict['wa.task'] + ': ' + msg);
     var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+    fireConv('form');
     window.open(url, '_blank', 'noopener');
     thanks.hidden = false;
-    /* Здесь Opus повесит gtag-конверсию отправки формы */
   }
   form.addEventListener('submit', onLeadSubmit);
 
@@ -659,7 +666,9 @@
   function onContactClick(e) {
     var a = e.target.closest('a[href^="tel:"], a[href*="wa.me"]');
     if (!a) return;
-    /* Здесь Opus повесит gtag-конверсии звонка и перехода в WhatsApp */
+    /* tel: открывает набор номера, wa.me — соседнюю вкладку: страница не выгружается,
+       поэтому переход не перехватываем, а просто отправляем конверсию. */
+    fireConv(a.getAttribute('href').indexOf('tel:') === 0 ? 'phone' : 'wa');
   }
   document.addEventListener('click', onContactClick);
 

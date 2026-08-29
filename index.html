@@ -3,6 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18416857116"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18416857116');
+
+  /* Конверсии Google Ads. sendTo по умолчанию — «Интерактивные номера телефонов».
+     Если передан url — переход выполняется в event_callback (для ссылок с переходом). */
+  var AW_CONV = {
+    phone: 'AW-18416857116/Al78CJvCmeocEJzg681E',
+    form:  'AW-18416857116/csB4CKXNmeocEJzg681E',
+    wa:    'AW-18416857116/ZCdkCKLPmeocEJzg681E'
+  };
+  function gtag_report_conversion(url, sendTo) {
+    var done = false;
+    var callback = function () {
+      if (done) return;
+      done = true;
+      if (typeof (url) != 'undefined' && url) window.location = url;
+    };
+    gtag('event', 'conversion', {
+      'send_to': sendTo || AW_CONV.phone,
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+    });
+    if (typeof (url) != 'undefined' && url) window.setTimeout(callback, 1000);
+    return false;
+  }
+</script>
 <title>KAZPOLIMER-LTD — изделия из полиуретана в Актобе | футеровка, гуммирование, 3D-печать</title>
 <meta name="description" content="Увеличиваем ресурс промышленного оборудования: полиуретановые изделия по чертежам и образцам от 1 шт. и от 1 дня, футеровка оборудования, гуммирование роликов и валов, сайлентблоки и автокомпоненты, 3D-печать пластиком. Актобе, с 2012 года. Отгрузка по Казахстану, в Россию и СНГ.">
 <meta name="keywords" content="полиуретан, изделия из полиуретана, полиуретан Казахстан, полиуретан Россия, полиуретан СНГ, гуммирование полиуретаном, футеровка полиуретаном, ролики полиуретановые, валы полиуретановые, манжеты из полиуретана, сальники из полиуретана, прокладки из полиуретана, мягкие соединения, сайлентблоки полиуретановые, шаровые опоры, виброподушки, моторные подушки, серьги рессор, реактивные тяги, втулки стабилизатора, сито грохота полиуретановое, крыльчатки из полиуретана, башмак асфальтоукладчика, фреза из полиуретана, поршень полиуретановый, обрезинивание колёс и роликов, 3D-печать пластиком, пластиковые изделия, скребки флиперы, флипер полиуретановый, гидроцилиндры, уплотнения гидроцилиндров, гидроциклон, уплотнительное кольцо, амортизаторы из полиуретана, листы на облицовку, облицовочные листы">
@@ -29,7 +62,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260829-1">
+<link rel="stylesheet" href="styles.css?v=20260829-2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -699,6 +732,6 @@
   <p class="lbx-cap"><span id="lbxCap"></span><span class="lbx-num" id="lbxNum"></span></p>
 </div>
 
-<script src="script.js?v=20260829-1" defer></script>
+<script src="script.js?v=20260829-2" defer></script>
 </body>
 </html>
