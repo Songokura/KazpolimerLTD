@@ -1,11 +1,11 @@
 /* ════════════════════════════════════════════════════════════════
-   KAZPOLIMER-LTD — «паспорт изделия»
+   KAZPOLIMER-LTD - «паспорт изделия»
    Тёмный графит + полиуретановый жёлтый, чертёжная графика
    ════════════════════════════════════════════════════════════════ */
 
 :root{
-  --dark:      #171F2A;   /* базовый графит — осветлён 28.08.2026 */
-  --dark-2:    #1D2734;   /* чуть светлее — панельные секции */
+  --dark:      #171F2A;   /* базовый графит - осветлён 28.08.2026 */
+  --dark-2:    #1D2734;   /* чуть светлее - панельные секции */
   --panel:     #243040;   /* карточки на тёмном */
   --paper:     #F5F3EE;   /* «чертёжная бумага» */
   --paper-2:   #E9E6DC;
@@ -78,12 +78,12 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 .btn:active{ transform:scale(.97); }
 .btn-solid{ background:var(--yellow); color:var(--ink); }
 .btn-solid:hover{ background:var(--yellow-2); }
-.btn-wa{ background:#1FAF5C; color:#fff; }
+.btn-wa{ background:#0F7F38; color:#fff; }
 .btn-ig{ background:var(--grad-ig); color:#fff; }
-.btn-wa:hover{ background:#189A50; }
+.btn-wa:hover{ background:#0C6B2F; }
 .btn-full{ width:100%; }
 
-/* ── шапка (без backdrop-filter — осознанно!) ─────────────────── */
+/* ── шапка (без backdrop-filter - осознанно!) ─────────────────── */
 .header{
   position:fixed; top:0; left:0; right:0; z-index:100;
   background:rgba(23,31,42,.62);
@@ -123,7 +123,7 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 }
 .hdr-call:hover{ border-color:var(--yellow); color:var(--yellow); }
 
-/* переключатель языка — стандарт студии */
+/* переключатель языка - стандарт студии */
 .lang{ display:flex; gap:0; background:rgba(255,255,255,.16); border-radius:10px; padding:3px; }
 .lang button{
   border:0; background:transparent; border-radius:7px; cursor:pointer;
@@ -187,13 +187,13 @@ body.menu-open{ overflow:hidden; }
   background:var(--grad-logo);
   clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%);
 }
-/* заголовок и лид секции — всегда во всю ширину контейнера */
+/* заголовок и лид секции - всегда во всю ширину контейнера */
 .sec-lead{
   margin-top:18px; font-size:clamp(16px, 1.5vw, 19px);
   color:var(--muted-d); line-height:1.65;
 }
 
-/* якорные заголовки — отступ под фикс-шапку */
+/* якорные заголовки - отступ под фикс-шапку */
 #glavnaya,#princip,#izdeliya,#nomenklatura,#futerovka,#gummirovanie,
 #otrasli,#plastik-3d,#kak-zakazat,#preimushchestva,#dokumenty,#klienty,#kontakty,#zayavka{ scroll-margin-top:calc(var(--hdr-h) + 8px); }
 
@@ -228,6 +228,13 @@ body.menu-open{ overflow:hidden; }
 /* слайдер направлений: тексты и картинки слайдов лежат в одной ячейке грида,
    высота блока = самый высокий слайд, поэтому кнопки не прыгают при смене */
 .hs-stack{ display:grid; margin-bottom:34px; }
+.hero-txt{ animation:heroIn .9s cubic-bezier(.2,.7,.2,1) both; }
+.hero-fig{ animation:heroIn 1.1s cubic-bezier(.2,.7,.2,1) .1s both; }
+@keyframes heroIn{ from{ transform:translateY(22px); } }
+.hero-ig{ display:inline-flex; align-items:center; gap:9px; margin:-16px 0 26px;
+  font-size:14.5px; font-weight:500; color:var(--muted-d); transition:color .2s; }
+.hero-ig:hover{ color:var(--yellow); }
+@media (prefers-reduced-motion: reduce){ .hero-txt, .hero-fig{ animation:none; } }
 .hs-t{ grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(16px);
   transition:opacity .45s, transform .6s cubic-bezier(.2,.7,.2,1), visibility 0s .6s; }
 .hs-t.is-on{ opacity:1; visibility:visible; transform:none;
@@ -239,7 +246,7 @@ body.menu-open{ overflow:hidden; }
 .hs-arr{ flex:0 0 auto; width:44px; height:44px; border-radius:50%; display:grid; place-items:center;
   background:transparent; border:1px solid var(--line-d); color:var(--white); cursor:pointer;
   transition:border-color .2s, color .2s, transform .15s; }
-.hs-arr:hover{ border-color:var(--yellow); color:var(--yellow); }
+@media (hover:hover){ .hs-arr:hover{ border-color:var(--yellow); color:var(--yellow); } }
 .hs-arr:active{ transform:scale(.94); }
 .hs-tabs{ flex:1; min-width:0; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px; }
 .hs-tab{ position:relative; background:none; border:0; border-top:2px solid var(--line-d);
@@ -267,20 +274,20 @@ body.menu-open{ overflow:hidden; }
 /* значок WhatsApp на карточке: сразу в чат с названием изделия */
 .c-foot{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .c-wa{ flex:0 0 auto; width:40px; height:40px; border-radius:50%; display:grid; place-items:center;
-  background:#1FAF5C; color:#fff; transition:background-color .2s, transform .2s; }
+  background:#0F7F38; color:#fff; transition:background-color .2s, transform .2s; }
 .c-wa svg{ width:21px; height:21px; }
-.c-wa:hover{ background:#189A50; transform:scale(1.07); }
+@media (hover:hover){ .c-wa:hover{ background:#0C6B2F; transform:scale(1.07); } }
 .c-wa:active{ transform:scale(.94); }
 
 /* плавающая кнопка WhatsApp */
 .wa-fab{ position:fixed; z-index:90; width:60px; height:60px; border-radius:50%;
   right:max(18px, env(safe-area-inset-right)); bottom:max(18px, env(safe-area-inset-bottom));
-  display:grid; place-items:center; background:#1FAF5C; color:#fff;
+  display:grid; place-items:center; background:#0F7F38; color:#fff;
   box-shadow:0 10px 28px rgba(0,0,0,.38); transition:transform .2s, background-color .2s; }
-.wa-fab::after{ content:""; position:absolute; inset:0; border-radius:50%; border:2px solid #1FAF5C;
+.wa-fab::after{ content:""; position:absolute; inset:0; border-radius:50%; border:2px solid #0F7F38;
   animation:wapulse 2.6s ease-out infinite; pointer-events:none; }
 @keyframes wapulse{ 0%{ transform:scale(1); opacity:.7; } 70%,100%{ transform:scale(1.45); opacity:0; } }
-.wa-fab:hover{ background:#189A50; transform:scale(1.07); }
+@media (hover:hover){ .wa-fab:hover{ background:#0C6B2F; transform:scale(1.07); } }
 .wa-fab:active{ transform:scale(.95); }
 body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 @media (prefers-reduced-motion: reduce){ .wa-fab::after{ animation:none; opacity:0; } }
@@ -316,6 +323,8 @@ body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 }
 
 /* ── лента номенклатуры ──────────────────────────────────────── */
+/* clip по X: наклон и scale ленты давали горизонтальный скролл на телефоне */
+.marq-clip{ position:relative; z-index:2; overflow-x:clip; }
 .marq{
   position:relative; z-index:2;
   background:var(--yellow); color:var(--ink);
@@ -691,7 +700,7 @@ body.lbx-open{ overflow:hidden; }
 .foot-in{ display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
 .foot-logo-w{ display:inline-flex; align-items:flex-start; }
 .foot-logo{ width:164px; }
-.foot-tm{ font-size:12.5px; color:rgba(214,224,236,.45); }
+.foot-tm{ font-size:12.5px; color:rgba(214,224,236,.62); }
 .tm{
   font-family:var(--ff-d); font-weight:700; font-size:10px; line-height:1;
   color:var(--muted-d); margin-left:3px; margin-top:2px; flex:0 0 auto;
@@ -705,9 +714,9 @@ body.lbx-open{ overflow:hidden; }
   transition:color .2s, border-color .2s, background-color .2s;
 }
 .foot-soc a:hover{ color:#fff; border-color:transparent; background:var(--grad-ig); }
-.foot-soc a:last-child:hover{ background:#1FAF5C; }
+.foot-soc a:last-child:hover{ background:#0F7F38; }
 .foot-org{ font-size:14.5px; color:var(--muted-d); }
-.foot-c{ font-size:13.5px; color:rgba(214,224,236,.4); }
+.foot-c{ font-size:13.5px; color:rgba(214,224,236,.62); }
 
 
 /* ── ПРИНЦИП (позиционирование бренда) ───────────────────────── */
@@ -799,9 +808,9 @@ body.lbx-open{ overflow:hidden; }
 
 /* ════════════════════════════════════════════════════════════════
    АДАПТИВ.
-   Порог бургера и оверлея — ОДНО число: 1270px. История: 1200 → 1240 (третья
+   Порог бургера и оверлея - ОДНО число: 1270px. История: 1200 → 1240 (третья
    кнопка языка EN) → 1270 (иконка Instagram в шапке). Замер getBoundingClientRect()
-   на текущей вёрстке: минимум для навигации RU 1240, KZ 1250, EN 1180 — берём
+   на текущей вёрстке: минимум для навигации RU 1240, KZ 1250, EN 1180 - берём
    казахский плюс запас.
    ════════════════════════════════════════════════════════════════ */
 @media (max-width:1270px){
@@ -897,6 +906,7 @@ body.lbx-open{ overflow:hidden; }
    и логотипе 149px строка требует ~400px и бургер уезжает за правый край
    (body{overflow-x:hidden} его не прокручивает, а обрезает). Ужимаем шапку. */
 @media (max-width:400px){
+  h2, .hs-h, h1{ hyphens:auto; -webkit-hyphens:auto; overflow-wrap:break-word; }
   .hdr-in{ width:min(1320px, 100% - 32px); gap:10px; }
   .brand img{ width:124px; }
   .hdr-right{ gap:10px; }
@@ -905,7 +915,28 @@ body.lbx-open{ overflow:hidden; }
 }
 
 /* 320px (SE 1-го поколения, обложка Fold): слово «промышленности» в h1 имеет
-   min-content 318px и распирает колонку шире .wrap — кнопки CTA обрезаются. */
+   min-content 318px и распирает колонку шире .wrap - кнопки CTA обрезаются. */
 @media (max-width:345px){
   h1{ font-size:29px; }
 }
+
+/* ── липкая панель связи на телефоне (заменяет плавающую кнопку) ── */
+.mbar{ display:none; }
+@media (max-width:640px){
+  .mbar{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) 52px; gap:8px;
+    position:fixed; left:0; right:0; bottom:0; z-index:95;
+    padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+    background:var(--dark); border-top:1px solid var(--line-d); }
+  .mbar a{ display:flex; align-items:center; justify-content:center; gap:8px; height:48px;
+    font-family:var(--ff-d); font-weight:700; font-size:15px; }
+  .mbar-call{ background:var(--yellow); color:var(--ink); }
+  .mbar-wa{ background:#0F7F38; color:#fff; }
+  .mbar-ig{ background:var(--grad-ig); color:#fff; }
+  .wa-fab{ display:none; }
+  body{ padding-bottom:calc(64px + env(safe-area-inset-bottom)); }
+  body.menu-open .mbar, body.lbx-open .mbar{ display:none; }
+}
+
+/* фокус с клавиатуры виден на любом интерактиве */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--yellow); outline-offset:3px; }
