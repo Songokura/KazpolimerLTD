@@ -979,3 +979,43 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .cl-grid img{ max-height:46px; }
   .fut-body{ gap:28px; }
 }
+
+/* ── объединённые разделы (19.10.2026) ── */
+.svc-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px; }
+.svc{ position:relative; display:flex; flex-direction:column; overflow:hidden; background:#fff; border-radius:12px;
+  box-shadow:0 10px 28px rgba(16,22,30,.10); }
+.svc-media{ position:relative; height:240px; padding:14px; display:grid; gap:8px;
+  background:radial-gradient(closest-side, rgba(255,194,28,.18), transparent 80%), linear-gradient(180deg,#F6F4EE,#E9E6DC); }
+.svc-media img{ width:100%; height:100%; min-height:0; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(16,22,30,.18)); }
+.svc-m4{ grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; }
+.svc-m2{ grid-template-columns:1fr 1fr; }
+.svc-svg{ display:grid; place-items:center; color:#E0A400; }
+.svc-svg svg{ width:70%; height:auto; }
+.svc-body{ padding:22px 22px 24px; }
+.svc-body h3{ font-size:clamp(18px,1.6vw,21px); margin-bottom:8px; }
+.svc-body > p{ font-size:15px; color:var(--muted-l); margin-bottom:14px; }
+.svc-pts{ display:grid; gap:8px; }
+.svc-pts li{ display:flex; gap:10px; align-items:baseline; font-size:15px; font-weight:600; }
+.svc-pts li::before{ content:""; width:8px; height:8px; flex:0 0 auto; background:var(--yellow);
+  clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%); transform:translateY(-1px); }
+.sub-blk{ margin-top:56px; }
+.sub-h{ font-size:clamp(20px,2vw,26px); margin-bottom:22px; }
+.sec-paper .chips-lg li{ color:var(--ink); border-color:var(--line-l); background:#fff; }
+#kontakty .steps{ margin-bottom:48px; }
+#kontakty .step{ color:var(--ink); }
+#uslugi,#futerovka,#gummirovanie,#plastik-3d,#otrasli,#kak-zakazat,#dokumenty{ scroll-margin-top:calc(var(--hdr-h) + 8px); }
+@media (max-width:1100px){ .svc-grid{ grid-template-columns:1fr; } .svc{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); }
+  .svc-media{ height:auto; min-height:240px; } }
+@media (max-width:640px){
+  .svc{ display:flex; }
+  .svc-media{ height:200px; min-height:0; }
+  .svc-body{ padding:18px 18px 20px; }
+  .sub-blk{ margin-top:40px; }
+  .chips-lg li{ font-size:14px; padding:8px 14px; }
+  .chips{ gap:8px; }
+  #kontakty .steps{ margin-bottom:32px; }
+  .step{ padding:16px 14px; }
+  .step-n{ margin-bottom:10px; font-size:13px; }
+  .step h3{ font-size:16px; margin-bottom:4px; }
+  .step p{ font-size:13.5px; line-height:1.45; }
+}
