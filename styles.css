@@ -194,7 +194,7 @@ body.menu-open{ overflow:hidden; }
 }
 
 /* якорные заголовки - отступ под фикс-шапку */
-#glavnaya,#princip,#izdeliya,#nomenklatura,#futerovka,#gummirovanie,
+#glavnaya,#izdeliya,#nomenklatura,#avtokomponenty,#futerovka,#gummirovanie,
 #otrasli,#plastik-3d,#kak-zakazat,#preimushchestva,#dokumenty,#klienty,#kontakty,#zayavka{ scroll-margin-top:calc(var(--hdr-h) + 8px); }
 
 /* ── reveal-анимации ─────────────────────────────────────────── */
