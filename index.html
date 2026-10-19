@@ -62,7 +62,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260925-1">
+<link rel="stylesheet" href="styles.css?v=20261019-1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,6 +98,7 @@
 </script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ic-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol></svg>
 
 <a class="skip" href="#glavnaya" data-i18n="skip">К содержанию</a>
 
@@ -149,38 +150,68 @@
 <main>
 
 <!-- ═══════════ HERO ═══════════ -->
-<section class="hero" id="glavnaya">
+<section class="hero" id="glavnaya" aria-roledescription="carousel">
   <div class="grid-bg" aria-hidden="true"></div>
   <div class="wrap hero-in">
     <div class="hero-txt">
       <p class="overline rv"><span class="ol-tick" aria-hidden="true"></span><span data-i18n="hero.over">ТОО «KAZPOLIMER-LTD» · Актобе · на рынке с 2012 года</span></p>
-      <h1 class="rv" data-i18n="hero.h1">Полиуретан, который увеличивает ресурс промышленного оборудования</h1>
-      <p class="lead rv" data-i18n="hero.lead">Мы не продаём просто полиуретан — мы продлеваем срок службы узлов, которые изнашиваются первыми: изготавливаем изделия по чертежам и образцам от 1 штуки и от 1 дня, футеруем оборудование, гуммируем ролики и валы, печатаем детали из пластика на 3D-принтере. Собственное производство в Актобе, отгрузка по Казахстану, в Россию и страны СНГ.</p>
+      <div class="hs-stack rv">
+        <div class="hs-t is-on" id="hs0" role="group" aria-roledescription="slide">
+          <h1 data-i18n="hero.h1">Изделия из полиуретана по чертежам и образцам</h1>
+          <p class="lead" data-i18n="hero.lead">300+ наименований - от 1 штуки и от 1 дня. Увеличиваем ресурс промышленного оборудования.</p>
+        </div>
+        <div class="hs-t" id="hs1" role="group" aria-roledescription="slide" aria-hidden="true">
+          <p class="hs-h" data-i18n="hs.2t">Полиуретановая футеровка оборудования</p>
+          <p class="lead" data-i18n="hs.2x">Бункеры, желоба, трубы: с футеровкой служат в 4-5 раз дольше.</p>
+        </div>
+        <div class="hs-t" id="hs2" role="group" aria-roledescription="slide" aria-hidden="true">
+          <p class="hs-h" data-i18n="hs.3t">Гуммирование роликов и валов</p>
+          <p class="lead" data-i18n="hs.3x">Восстанавливаем полиуретановый слой - дешевле, чем менять узел.</p>
+        </div>
+        <div class="hs-t" id="hs3" role="group" aria-roledescription="slide" aria-hidden="true">
+          <p class="hs-h" data-i18n="hs.4t">Пластиковые детали на 3D-принтере</p>
+          <p class="lead" data-i18n="hs.4x">Деталь, которой нет в продаже, - по образцу, от 1 штуки.</p>
+        </div>
+      </div>
       <div class="hero-cta rv">
         <a class="btn btn-solid" href="tel:+77778000789"><span data-i18n="cta.call">Позвонить</span></a>
-        <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5.2-.4v-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.6 14.6 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3Z"/></svg><span data-i18n="cta.wa">Написать в WhatsApp</span></a>
+        <a class="btn btn-wa" id="heroWa" data-wa-key="hs.1k" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg><span data-i18n="cta.wa">Написать в WhatsApp</span></a>
       </div>
-      <dl class="facts rv">
-        <div class="fact"><dt>2012</dt><dd data-i18n="fact.f1">год начала работы</dd></div>
-        <div class="fact"><dt><span data-count="300">300</span>+</dt><dd data-i18n="fact.f2">наименований продукции</dd></div>
-        <div class="fact"><dt data-i18n="fact.f3v">1 шт.</dt><dd data-i18n="fact.f3">минимальный заказ</dd></div>
-        <div class="fact"><dt data-i18n="fact.f4v">от 1 дня</dt><dd data-i18n="fact.f4">срок изготовления</dd></div>
-      </dl>
+      <div class="hs-ctrl rv">
+        <button class="hs-arr" type="button" data-hs="prev" aria-label="Предыдущий слайд" data-i18n-aria="hs.prev"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="hs-tabs">
+          <button class="hs-tab is-on" type="button" aria-controls="hs0" aria-current="true"><span data-i18n="hs.1k">Изделия на заказ</span><i class="hs-bar"></i></button>
+          <button class="hs-tab" type="button" aria-controls="hs1"><span data-i18n="hs.2k">Футеровка</span><i class="hs-bar"></i></button>
+          <button class="hs-tab" type="button" aria-controls="hs2"><span data-i18n="hs.3k">Гуммирование</span><i class="hs-bar"></i></button>
+          <button class="hs-tab" type="button" aria-controls="hs3"><span data-i18n="hs.4k">3D-печать</span><i class="hs-bar"></i></button>
+        </div>
+        <button class="hs-arr" type="button" data-hs="next" aria-label="Следующий слайд" data-i18n-aria="hs.next"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
     </div>
-    <div class="hero-fig rv" aria-hidden="false">
+    <div class="hero-fig rv">
       <div class="hero-glow" aria-hidden="true"></div>
-      <img class="hero-img" src="assets/roller-orange.webp" alt="Гуммированный полиуретаном ролик конвейера производства KAZPOLIMER-LTD" width="693" height="693" fetchpriority="high" decoding="async">
-      <svg class="hero-dim draw" viewBox="0 0 400 400" aria-hidden="true">
-        <g class="dim-g">
-          <path class="dl" d="M 40 355 L 330 65"/>
-          <path class="dl" d="M 30 345 L 50 365 M 320 55 L 340 75"/>
-          <circle class="dc" cx="303" cy="300" r="52"/>
-          <path class="dl" d="M 303 248 L 303 208 L 380 208"/>
-          <path class="dl" d="M 96 130 L 60 94 L 12 94"/>
-        </g>
-        <text class="dt" x="378" y="200" text-anchor="end"><tspan data-i18n="hero.c2">стальное основание</tspan></text>
-        <text class="dt" x="14" y="86"><tspan data-i18n="hero.c1">полиуретановое покрытие</tspan></text>
-      </svg>
+      <div class="hs-figs">
+        <img class="hs-img is-on" src="assets/prod-rollers.webp" alt="Промышленные полиуретановые катки производства KAZPOLIMER-LTD" width="723" height="780" fetchpriority="high" decoding="async">
+        <img class="hs-img" src="assets/lining-pipe-ring.webp" alt="Патрубок с полиуретановой футеровкой" width="703" height="613" decoding="async">
+        <img class="hs-img" src="assets/roller-orange.webp" alt="Конвейерный ролик, гуммированный оранжевым полиуретаном" width="693" height="693" decoding="async">
+        <div class="hs-img hs-svg" role="img" aria-label="3D-печать пластиковой детали">
+          <svg viewBox="0 0 240 200" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M40 30h160M120 30v22"/>
+              <path d="M104 52h32l-8 22h-16z"/>
+              <path d="M120 74v18"/>
+              <path d="M62 176h116"/>
+            </g>
+            <g class="d3-layers" fill="currentColor" opacity=".9">
+              <rect x="78" y="158" width="84" height="9" rx="2"/>
+              <rect x="84" y="146" width="72" height="9" rx="2"/>
+              <rect x="90" y="134" width="60" height="9" rx="2"/>
+              <rect x="96" y="122" width="48" height="9" rx="2"/>
+              <rect x="102" y="110" width="36" height="9" rx="2" opacity=".55"/>
+            </g>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -204,7 +235,6 @@
       <p class="kicker"><span data-i18n="cr.kicker">Принцип</span></p>
       <p class="creed-1" data-i18n="cr.l1">Мы не продаём просто полиуретан.</p>
       <p class="creed-2" data-i18n="cr.l2">Мы увеличиваем ресурс промышленного оборудования.</p>
-      <p class="creed-x" data-i18n="cr.x">За каждой деталью стоит не материал, а простой линии, аварийная остановка и стоимость замены узла. Поэтому мы считаем не килограммы полиуретана, а то, сколько оборудование проработает после нашей работы — и делаем так, чтобы этот срок был кратно больше.</p>
     </div>
     <ul class="creed-pts">
       <li class="cpt rv"><span class="cpt-n" data-i18n="cr.p1n">×4–5</span><p data-i18n="cr.p1x">во столько раз дольше служит оборудование с полиуретановой футеровкой по сравнению с нефутерованным</p></li>
@@ -214,80 +244,24 @@
   </div>
 </section>
 
-<!-- ═══════════ НАПРАВЛЕНИЯ ═══════════ -->
-<section class="sec sec-dark" id="napravleniya">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <p class="kicker"><span data-i18n="dir.kicker">Направления</span></p>
-      <h2 data-i18n="dir.h2">Четыре направления работы</h2>
-      <p class="sec-lead" data-i18n="dir.lead">Полный цикл на собственном производстве, и все четыре направления решают одну задачу — чтобы узел проработал дольше: от литья изделия по чертежу и 3D-печати пластиковой детали до восстановления изношенного покрытия.</p>
-    </div>
-    <div class="dir-grid">
-      <a class="dir-card rv" href="#izdeliya">
-        <span class="dir-num">01</span>
-        <div class="dir-img"><img src="assets/prod-rollers.webp" alt="Полиуретановые катки — изделия на заказ" width="723" height="780" loading="lazy" decoding="async"></div>
-        <h3 data-i18n="dir.c1t">Изделия на заказ</h3>
-        <p data-i18n="dir.c1x">Серийные и нестандартные полиуретановые изделия по вашим чертежам и образцам — от 1 штуки.</p>
-        <span class="dir-more"><span data-i18n="more">Подробнее</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
-      </a>
-      <a class="dir-card rv" href="#futerovka">
-        <span class="dir-num">02</span>
-        <div class="dir-img"><img src="assets/lining-hopper.webp" alt="Бункер с жёлтой полиуретановой футеровкой" width="394" height="296" loading="lazy" decoding="async"></div>
-        <h3 data-i18n="dir.c2t">Полиуретановая футеровка</h3>
-        <p data-i18n="dir.c2x">Защита накопительного, сортировочного, пересыпного и бункерного оборудования от абразивного износа.</p>
-        <span class="dir-more"><span data-i18n="more">Подробнее</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
-      </a>
-      <a class="dir-card rv" href="#gummirovanie">
-        <span class="dir-num">03</span>
-        <div class="dir-img"><img src="assets/rollers-white.webp" alt="Полиуретановые валы после гуммирования" width="748" height="772" loading="lazy" decoding="async"></div>
-        <h3 data-i18n="dir.c3t">Гуммирование роликов и валов</h3>
-        <p data-i18n="dir.c3x">Нанесение и восстановление защитного полиуретанового слоя — вместо замены изношенного оборудования.</p>
-        <span class="dir-more"><span data-i18n="more">Подробнее</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
-      </a>
-      <a class="dir-card rv" href="#plastik-3d">
-        <span class="dir-num">04</span>
-        <div class="dir-img dir-img-svg">
-          <svg viewBox="0 0 240 200" role="img" aria-label="3D-печать пластиковой детали">
-            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M40 30h160M120 30v22"/>
-              <path d="M104 52h32l-8 22h-16z"/>
-              <path d="M120 74v18"/>
-              <path d="M62 176h116"/>
-            </g>
-            <g class="d3-layers" fill="currentColor" opacity=".9">
-              <rect x="78" y="158" width="84" height="9" rx="2"/>
-              <rect x="84" y="146" width="72" height="9" rx="2"/>
-              <rect x="90" y="134" width="60" height="9" rx="2"/>
-              <rect x="96" y="122" width="48" height="9" rx="2"/>
-              <rect x="102" y="110" width="36" height="9" rx="2" opacity=".55"/>
-            </g>
-          </svg>
-        </div>
-        <h3 data-i18n="dir.c4t">Пластик и 3D-печать</h3>
-        <p data-i18n="dir.c4x">Печатаем детали и корпуса из пластика на 3D-принтере: прототип, мелкая серия, замена детали, которой нет в продаже.</p>
-        <span class="dir-more"><span data-i18n="more">Подробнее</span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- ═══════════ 01 ИЗДЕЛИЯ ═══════════ -->
 <section class="sec sec-dark sec-line" id="izdeliya">
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="kicker"><span data-i18n="prod.kicker">01 · Производство на заказ</span></p>
+      <p class="kicker"><span data-i18n="prod.kicker">Производство на заказ</span></p>
       <h2 data-i18n="prod.h2">Полиуретановые изделия по вашим чертежам и образцам</h2>
-      <p class="sec-lead" data-i18n="prod.lead">Более 300 наименований — от манжеты до рабочего колеса насоса. Полиуретановая деталь переживает стальную и резиновую в разы, а мы подбираем твёрдость под вашу нагрузку. Возьмём в работу чертёж, эскиз или физический образец; минимальный объём заказа — 1 штука.</p>
+      <p class="sec-lead" data-i18n="prod.lead">Более 300 наименований. Пришлите чертёж или фото образца - изготовим от 1 штуки.</p>
     </div>
     <div class="prod-grid">
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-screens.webp" alt="Полиуретановые сита, оранжевое и чёрное" width="800" height="643" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g1">Полиуретановые сита</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-rollers.webp" alt="Промышленные полиуретановые катки с подшипниками" width="723" height="780" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g2">Промышленные катки</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-wheel.webp" alt="Колесо для спецтехники — красный полиуретан на литом диске" width="487" height="495" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g3">Колёса для спецтехники</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-impeller.webp" alt="Полиуретановое рабочее колесо насоса" width="777" height="583" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g4">Рабочие колёса насосов</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-volute.webp" alt="Улитка — корпус насоса из полиуретана" width="526" height="552" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g5">Улитки насосов</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-scrapers.webp" alt="Полиуретановые скребки, четыре штуки" width="615" height="411" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g6">Скребки</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-bar.webp" alt="Полиуретановый брус с пазами" width="624" height="317" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g7">Брус с пазами</figcaption></figure>
-      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-cyclone.webp" alt="Гидроциклон в полиуретановом исполнении" width="700" height="467" loading="lazy" decoding="async"></div><figcaption data-i18n="prod.g8">Гидроциклоны и патрубки</figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-screens.webp" alt="Полиуретановые сита, оранжевое и чёрное" width="800" height="643" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g1">Полиуретановые сита</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g1" target="_blank" rel="noopener" aria-label="WhatsApp: Полиуретановые сита"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-rollers.webp" alt="Промышленные полиуретановые катки с подшипниками" width="723" height="780" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g2">Промышленные катки</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g2" target="_blank" rel="noopener" aria-label="WhatsApp: Промышленные катки"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-wheel.webp" alt="Колесо для спецтехники - красный полиуретан на литом диске" width="487" height="495" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g3">Колёса для спецтехники</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g3" target="_blank" rel="noopener" aria-label="WhatsApp: Колёса для спецтехники"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-impeller.webp" alt="Полиуретановое рабочее колесо насоса" width="777" height="583" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g4">Рабочие колёса насосов</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g4" target="_blank" rel="noopener" aria-label="WhatsApp: Рабочие колёса насосов"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-volute.webp" alt="Улитка - корпус насоса из полиуретана" width="526" height="552" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g5">Улитки насосов</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g5" target="_blank" rel="noopener" aria-label="WhatsApp: Улитки насосов"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-scrapers.webp" alt="Полиуретановые скребки, четыре штуки" width="615" height="411" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g6">Скребки</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g6" target="_blank" rel="noopener" aria-label="WhatsApp: Скребки"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-bar.webp" alt="Полиуретановый брус с пазами" width="624" height="317" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g7">Брус с пазами</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g7" target="_blank" rel="noopener" aria-label="WhatsApp: Брус с пазами"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+      <figure class="p-card rv"><div class="p-img"><img src="assets/prod-cyclone.webp" alt="Гидроциклон в полиуретановом исполнении" width="700" height="467" loading="lazy" decoding="async"></div><figcaption class="c-foot"><span data-i18n="prod.g8">Гидроциклоны и патрубки</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="prod.g8" target="_blank" rel="noopener" aria-label="WhatsApp: Гидроциклоны и патрубки"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
     </div>
     <a class="ig-note rv" href="https://www.instagram.com/kazpolimer.kz/" target="_blank" rel="noopener">
       <span class="ig-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.3" cy="6.7" r="1.25" fill="currentColor"/></svg></span>
@@ -340,7 +314,7 @@
       </ul>
       <div class="nomen-cta">
         <p data-i18n="prod.ctaTxt">Пришлите чертёж или фото образца — посчитаем изготовление.</p>
-        <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5.2-.4v-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.6 14.6 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3Z"/></svg><span data-i18n="prod.ctaBtn">Отправить в WhatsApp</span></a>
+        <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#ic-wa"/></svg><span data-i18n="prod.ctaBtn">Отправить в WhatsApp</span></a>
       </div>
     </div>
   </div>
@@ -350,9 +324,9 @@
 <section class="sec sec-paper" id="futerovka">
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="kicker"><span data-i18n="fut.kicker">02 · Футеровка</span></p>
+      <p class="kicker"><span data-i18n="fut.kicker">Футеровка</span></p>
       <h2 data-i18n="fut.h2">Полиуретановая футеровка оборудования</h2>
-      <p class="sec-lead" data-i18n="fut.lead">Защищаем от абразивного износа и агрессивных сред накопительное, разделительно-сортировочное, пересыпное и бункерное оборудование: футерованный узел служит в 4–5 раз дольше и требует ремонта минимум втрое реже.</p>
+      <p class="sec-lead" data-i18n="fut.lead">Защищаем бункеры, желоба, грохоты и трубы от абразивного износа.</p>
     </div>
     <div class="fut-stats">
       <div class="stat rv">
@@ -366,16 +340,16 @@
     </div>
     <div class="fut-body">
       <ol class="blist">
-        <li class="rv"><span class="b-num">01</span><div><h3 data-i18n="fut.b1t">Меньше затрат на ремонт</h3><p data-i18n="fut.b1x">Экономия по сравнению со стальным нефутерованным оборудованием и резиновой футеровкой.</p></div></li>
-        <li class="rv"><span class="b-num">02</span><div><h3 data-i18n="fut.b2t">Держит ударные нагрузки</h3><p data-i18n="fut.b2x">Полиуретан эластичен и прочен на разрыв и порез — повреждения снижаются вплоть до полного исключения.</p></div></li>
-        <li class="rv"><span class="b-num">03</span><div><h3 data-i18n="fut.b3t">Без налипания и намерзания</h3><p data-i18n="fut.b3x">Гладкая непористая поверхность с низким коэффициентом сцепления — материал не налипает и не намерзает.</p></div></li>
-        <li class="rv"><span class="b-num">04</span><div><h3 data-i18n="fut.b4t">Тише работает</h3><p data-i18n="fut.b4x">Полиуретановый слой заметно снижает шум оборудования.</p></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b1t">Меньше затрат на ремонт</h3><p data-i18n="fut.b1x">Дешевле, чем сталь без футеровки и резина.</p></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b2t">Держит ударные нагрузки</h3><p data-i18n="fut.b2x">Эластичен, не рвётся и не режется.</p></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b3t">Без налипания и намерзания</h3><p data-i18n="fut.b3x">Гладкая поверхность: материал не липнет и не мёрзнет.</p></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b4t">Тише работает</h3><p data-i18n="fut.b4x">Полиуретановый слой заметно снижает шум оборудования.</p></div></li>
       </ol>
       <div class="fut-gal">
-        <figure class="f-card rv"><img src="assets/lining-hopper.webp" alt="Приёмный бункер с жёлтой полиуретановой футеровкой" width="394" height="296" loading="lazy" decoding="async"><figcaption data-i18n="fut.p1">Бункер с футеровкой</figcaption></figure>
-        <figure class="f-card rv"><img src="assets/lining-pipe-ring.webp" alt="Патрубок с полиуретановой футеровкой, вид в раструб" width="703" height="613" loading="lazy" decoding="async"><figcaption data-i18n="fut.p2">Футерованный патрубок</figcaption></figure>
-        <figure class="f-card rv"><img src="assets/lining-pipe-flange.webp" alt="Труба с фланцами и внутренней полиуретановой футеровкой" width="450" height="293" loading="lazy" decoding="async"><figcaption data-i18n="fut.p3">Труба с внутренней футеровкой</figcaption></figure>
-        <figure class="f-card rv"><img src="assets/prod-plates.webp" alt="Жёлтые футеровочные плиты на стальной подложке" width="673" height="473" loading="lazy" decoding="async"><figcaption data-i18n="fut.p4">Футеровочные плиты</figcaption></figure>
+        <figure class="f-card rv"><img src="assets/lining-hopper.webp" alt="Приёмный бункер с жёлтой полиуретановой футеровкой" width="394" height="296" loading="lazy" decoding="async"><figcaption class="c-foot"><span data-i18n="fut.p1">Бункер с футеровкой</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="fut.p1" target="_blank" rel="noopener" aria-label="WhatsApp: Бункер с футеровкой"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+        <figure class="f-card rv"><img src="assets/lining-pipe-ring.webp" alt="Патрубок с полиуретановой футеровкой, вид в раструб" width="703" height="613" loading="lazy" decoding="async"><figcaption class="c-foot"><span data-i18n="fut.p2">Футерованный патрубок</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="fut.p2" target="_blank" rel="noopener" aria-label="WhatsApp: Футерованный патрубок"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+        <figure class="f-card rv"><img src="assets/lining-pipe-flange.webp" alt="Труба с фланцами и внутренней полиуретановой футеровкой" width="450" height="293" loading="lazy" decoding="async"><figcaption class="c-foot"><span data-i18n="fut.p3">Труба с внутренней футеровкой</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="fut.p3" target="_blank" rel="noopener" aria-label="WhatsApp: Труба с внутренней футеровкой"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
+        <figure class="f-card rv"><img src="assets/prod-plates.webp" alt="Жёлтые футеровочные плиты на стальной подложке" width="673" height="473" loading="lazy" decoding="async"><figcaption class="c-foot"><span data-i18n="fut.p4">Футеровочные плиты</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="fut.p4" target="_blank" rel="noopener" aria-label="WhatsApp: Футеровочные плиты"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
       </div>
     </div>
   </div>
@@ -386,9 +360,9 @@
   <div class="grid-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="kicker"><span data-i18n="gum.kicker">03 · Гуммирование</span></p>
+      <p class="kicker"><span data-i18n="gum.kicker">Гуммирование</span></p>
       <h2 data-i18n="gum.h2">Гуммирование роликов и валов полиуретаном</h2>
-      <p class="sec-lead" data-i18n="gum.lead">Нанесение и восстановление защитного слоя — экономически оправданная альтернатива ремонту или замене изношенного оборудования: ниже затраты, короче простой, в разы дольше срок эксплуатации. Покрытие можно обновлять неоднократно.</p>
+      <p class="sec-lead" data-i18n="gum.lead">Наносим и восстанавливаем полиуретановый слой - дешевле, чем менять узел.</p>
     </div>
     <div class="gum-body">
       <div class="gum-fig rv">
@@ -410,19 +384,19 @@
 <section class="sec sec-paper" id="plastik-3d">
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="kicker"><span data-i18n="p3.kicker">04 · Пластик и 3D-печать</span></p>
+      <p class="kicker"><span data-i18n="p3.kicker">Пластик и 3D-печать</span></p>
       <h2 data-i18n="p3.h2">Пластиковые изделия и печать на 3D-принтере</h2>
-      <p class="sec-lead" data-i18n="p3.lead">Помимо полиуретана у нас есть собственное производство изделий из пластика на 3D-принтере. Печатаем детали, корпуса и оснастку по вашей модели, чертежу или образцу — прототип, мелкая серия или одна деталь, которой уже нет в продаже.</p>
+      <p class="sec-lead" data-i18n="p3.lead">Детали и корпуса из пластика на 3D-принтере - по образцу, обмерам или модели.</p>
     </div>
     <div class="p3-grid">
-      <div class="p3 rv"><span class="p3-n">01</span><h3 data-i18n="p3.b1t">Деталь, которой нет в продаже</h3><p data-i18n="p3.b1x">Снятая с производства или редкая пластиковая деталь — печатаем по образцу или обмерам.</p></div>
-      <div class="p3 rv"><span class="p3-n">02</span><h3 data-i18n="p3.b2t">Прототип перед литьём</h3><p data-i18n="p3.b2x">Проверяем геометрию и посадочные места на пластиковом образце до изготовления полиуретановой оснастки.</p></div>
-      <div class="p3 rv"><span class="p3-n">03</span><h3 data-i18n="p3.b3t">Сложная геометрия без оснастки</h3><p data-i18n="p3.b3x">Внутренние каналы, тонкие рёбра, нестандартные формы — печать не требует пресс-формы.</p></div>
-      <div class="p3 rv"><span class="p3-n">04</span><h3 data-i18n="p3.b4t">Единичный заказ и мелкая серия</h3><p data-i18n="p3.b4x">От 1 штуки, срок — от 1 дня в зависимости от размера и загрузки принтера.</p></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b1t">Деталь, которой нет в продаже</h3><p data-i18n="p3.b1x">Редкую или снятую с производства - печатаем по образцу.</p></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b2t">Прототип перед литьём</h3><p data-i18n="p3.b2x">Проверяем геометрию до изготовления оснастки.</p></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b3t">Сложная геометрия без оснастки</h3><p data-i18n="p3.b3x">Каналы, тонкие рёбра, сложные формы - без пресс-формы.</p></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b4t">Единичный заказ и мелкая серия</h3><p data-i18n="p3.b4x">От 1 штуки, срок от 1 дня.</p></div>
     </div>
     <div class="nomen-cta p3-cta rv">
       <p data-i18n="p3.ctaTxt">Пришлите модель, чертёж или фото детали — посчитаем печать.</p>
-      <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5.2-.4v-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.6 14.6 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3Z"/></svg><span data-i18n="p3.cta">Обсудить печать в WhatsApp</span></a>
+      <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#ic-wa"/></svg><span data-i18n="p3.cta">Обсудить печать в WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -433,7 +407,7 @@
     <div class="sec-head rv">
       <p class="kicker"><span data-i18n="ind.kicker">Отрасли</span></p>
       <h2 data-i18n="ind.h2">Отрасли применения</h2>
-      <p class="sec-lead" data-i18n="ind.lead">Полиуретан работает там, где резина и сталь сдаются: абразив, удары, агрессивные среды. Везде, где идёт этот износ, мы увеличиваем ресурс оборудования.</p>
+      <p class="sec-lead" data-i18n="ind.lead">Полиуретан работает там, где резина и сталь быстро изнашиваются.</p>
     </div>
     <ul class="chips chips-lg rv">
       <li data-i18n="ind.1">нефтегазодобыча</li>
@@ -503,7 +477,7 @@
     <div class="sec-head rv">
       <p class="kicker"><span data-i18n="doc.kicker">Знак и документы</span></p>
       <h2 data-i18n="doc.h2">Собственный товарный знак и место в реестре товаропроизводителей</h2>
-      <p class="sec-lead" data-i18n="doc.lead">У компании собственный товарный знак: по заявке №135179 Казпатент вынес заключение экспертизы о регистрации знака в трёх классах МКТУ. Плюс 18 наименований продукции в государственном реестре отечественных товаропроизводителей с долей внутристрановой ценности 86,12% — это важно при закупках с требованием местного содержания.</p>
+      <p class="sec-lead" data-i18n="doc.lead">Товарный знак в Казпатенте и 18 позиций в реестре казахстанских товаропроизводителей.</p>
     </div>
 
     <article class="tmk rv">
@@ -604,7 +578,6 @@
     <div class="sec-head rv">
       <p class="kicker"><span data-i18n="cl.kicker">Клиенты</span></p>
       <h2 data-i18n="cl.h2">Достоинства нашей продукции оценили</h2>
-      <p class="sec-lead" data-i18n="cl.lead">КазМунайГаз, ERG, Казхром, Казцинк, Казфосфат, KAZ Minerals, KMK Munai и другие промышленные предприятия Казахстана.</p>
     </div>
     <ul class="cl-grid">
       <li class="rv"><img src="assets/clients/kazmunaigas.webp" alt="КазМунайГаз" width="480" height="360" loading="lazy" decoding="async"></li>
@@ -710,13 +683,15 @@
     <span class="foot-logo-w"><img class="foot-logo" src="assets/logo-light.webp" alt="KAZPOLIMER-LTD" width="553" height="188" loading="lazy" decoding="async"><span class="tm" aria-hidden="true">®</span></span>
     <div class="foot-soc">
       <a href="https://www.instagram.com/kazpolimer.kz/" target="_blank" rel="noopener" aria-label="Instagram KAZPOLIMER-LTD" data-i18n-aria="ig.aria"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.3" cy="6.7" r="1.25" fill="currentColor"/></svg><span>@kazpolimer.kz</span></a>
-      <a href="https://wa.me/77778000789" target="_blank" rel="noopener" aria-label="WhatsApp KAZPOLIMER-LTD"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5.2-.4v-.4c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.6 14.6 0 0 0 1.5.5 3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3Z"/></svg><span>+7 777 800 07 89</span></a>
+      <a href="https://wa.me/77778000789" target="_blank" rel="noopener" aria-label="WhatsApp KAZPOLIMER-LTD"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg><span>+7 777 800 07 89</span></a>
     </div>
     <p class="foot-org" data-i18n="ft.org">ТОО «KAZPOLIMER-LTD» · изделия из полиуретана · Актобе — Астана</p>
     <p class="foot-tm" data-i18n="ft.tm">Логотип и название KAZPOLIMER-LTD — товарный знак ТОО «KAZPOLIMER-LTD» (Казпатент, заявка №135179).</p>
     <p class="foot-c"><span data-i18n="ft.c">© 2012–</span><span id="year">2026</span> KAZPOLIMER-LTD</p>
   </div>
 </footer>
+
+<a class="wa-fab" href="https://wa.me/77778000789" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" data-i18n-aria="cta.wa"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><use href="#ic-wa"/></svg></a>
 
 <div class="lbx" id="lbx" hidden>
   <button class="lbx-close" id="lbxClose" type="button" aria-label="Закрыть" data-i18n-aria="lbx.close">
@@ -732,6 +707,6 @@
   <p class="lbx-cap"><span id="lbxCap"></span><span class="lbx-num" id="lbxNum"></span></p>
 </div>
 
-<script src="script.js?v=20260925-1" defer></script>
+<script src="script.js?v=20261019-1" defer></script>
 </body>
 </html>

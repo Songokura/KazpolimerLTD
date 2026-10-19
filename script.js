@@ -18,8 +18,8 @@
       'cta.call': 'Позвонить', 'cta.wa': 'Написать в WhatsApp', 'more': 'Подробнее',
       'mob.note': 'Актобе · пр. Санкибай батыра, 14Б · Пн–Пт 09:00–18:00, Сб 09:00–13:00',
       'hero.over': 'ТОО «KAZPOLIMER-LTD» · Актобе · на рынке с 2012 года',
-      'hero.h1': 'Полиуретан, который увеличивает ресурс промышленного оборудования',
-      'hero.lead': 'Мы не продаём просто полиуретан — мы продлеваем срок службы узлов, которые изнашиваются первыми: изготавливаем изделия по чертежам и образцам от 1 штуки и от 1 дня, футеруем оборудование, гуммируем ролики и валы, печатаем детали из пластика на 3D-принтере. Собственное производство в Актобе, отгрузка по Казахстану, в Россию и страны СНГ.',
+      'hero.h1': 'Изделия из полиуретана по чертежам и образцам',
+      'hero.lead': '300+ наименований - от 1 штуки и от 1 дня. Увеличиваем ресурс промышленного оборудования.',
       'fact.f1': 'год начала работы', 'fact.f2': 'наименований продукции',
       'fact.f3v': '1 шт.', 'fact.f3': 'минимальный заказ',
       'fact.f4v': 'от 1 дня', 'fact.f4': 'срок изготовления',
@@ -46,9 +46,9 @@
       'dir.c3x': 'Нанесение и восстановление защитного полиуретанового слоя — вместо замены изношенного оборудования.',
       'dir.c4t': 'Пластик и 3D-печать',
       'dir.c4x': 'Печатаем детали и корпуса из пластика на 3D-принтере: прототип, мелкая серия, замена детали, которой нет в продаже.',
-      'prod.kicker': '01 · Производство на заказ',
+      'prod.kicker': 'Производство на заказ',
       'prod.h2': 'Полиуретановые изделия по вашим чертежам и образцам',
-      'prod.lead': 'Более 300 наименований — от манжеты до рабочего колеса насоса. Полиуретановая деталь переживает стальную и резиновую в разы, а мы подбираем твёрдость под вашу нагрузку. Возьмём в работу чертёж, эскиз или физический образец; минимальный объём заказа — 1 штука.',
+      'prod.lead': 'Более 300 наименований. Пришлите чертёж или фото образца - изготовим от 1 штуки.',
       'prod.g1': 'Полиуретановые сита', 'prod.g2': 'Промышленные катки', 'prod.g3': 'Колёса для спецтехники',
       'prod.g4': 'Рабочие колёса насосов', 'prod.g5': 'Улитки насосов', 'prod.g6': 'Скребки',
       'prod.g7': 'Брус с пазами', 'prod.g8': 'Гидроциклоны и патрубки',
@@ -56,22 +56,22 @@
       'prod.g.ind': 'Для промышленности', 'prod.g.auto': 'Автокомпоненты из полиуретана', 'prod.g.any': 'И нестандарт',
       'prod.ctaTxt': 'Пришлите чертёж или фото образца — посчитаем изготовление.',
       'prod.ctaBtn': 'Отправить в WhatsApp',
-      'fut.kicker': '02 · Футеровка', 'fut.h2': 'Полиуретановая футеровка оборудования',
-      'fut.lead': 'Защищаем от абразивного износа и агрессивных сред накопительное, разделительно-сортировочное, пересыпное и бункерное оборудование: футерованный узел служит в 4–5 раз дольше и требует ремонта минимум втрое реже.',
+      'fut.kicker': 'Футеровка', 'fut.h2': 'Полиуретановая футеровка оборудования',
+      'fut.lead': 'Защищаем бункеры, желоба, грохоты и трубы от абразивного износа.',
       'fut.s1': 'дольше служит футерованное оборудование',
       'fut.s2': 'реже ремонты — как минимум',
       'fut.b1t': 'Меньше затрат на ремонт',
-      'fut.b1x': 'Экономия по сравнению со стальным нефутерованным оборудованием и резиновой футеровкой.',
+      'fut.b1x': 'Дешевле, чем сталь без футеровки и резина.',
       'fut.b2t': 'Держит ударные нагрузки',
-      'fut.b2x': 'Полиуретан эластичен и прочен на разрыв и порез — повреждения снижаются вплоть до полного исключения.',
+      'fut.b2x': 'Эластичен, не рвётся и не режется.',
       'fut.b3t': 'Без налипания и намерзания',
-      'fut.b3x': 'Гладкая непористая поверхность с низким коэффициентом сцепления — материал не налипает и не намерзает.',
+      'fut.b3x': 'Гладкая поверхность: материал не липнет и не мёрзнет.',
       'fut.b4t': 'Тише работает',
       'fut.b4x': 'Полиуретановый слой заметно снижает шум оборудования.',
       'fut.p1': 'Бункер с футеровкой', 'fut.p2': 'Футерованный патрубок',
       'fut.p3': 'Труба с внутренней футеровкой', 'fut.p4': 'Футеровочные плиты',
-      'gum.kicker': '03 · Гуммирование', 'gum.h2': 'Гуммирование роликов и валов полиуретаном',
-      'gum.lead': 'Нанесение и восстановление защитного слоя — экономически оправданная альтернатива ремонту или замене изношенного оборудования: ниже затраты, короче простой, в разы дольше срок эксплуатации. Покрытие можно обновлять неоднократно.',
+      'gum.kicker': 'Гуммирование', 'gum.h2': 'Гуммирование роликов и валов полиуретаном',
+      'gum.lead': 'Наносим и восстанавливаем полиуретановый слой - дешевле, чем менять узел.',
       'gum.b1t': 'Однородное эластичное покрытие',
       'gum.b1x': 'Высокая износостойкость и стойкость к порезам по всей толщине слоя.',
       'gum.b2t': 'Высокая адгезия',
@@ -81,7 +81,7 @@
       'gum.b4t': 'Держит переменные нагрузки',
       'gum.b4x': 'Выдерживает высокие динамические и знакопеременные нагрузки.',
       'ind.kicker': 'Отрасли', 'ind.h2': 'Отрасли применения',
-      'ind.lead': 'Полиуретан работает там, где резина и сталь сдаются: абразив, удары, агрессивные среды. Везде, где идёт этот износ, мы увеличиваем ресурс оборудования.',
+      'ind.lead': 'Полиуретан работает там, где резина и сталь быстро изнашиваются.',
       'ind.1': 'нефтегазодобыча', 'ind.2': 'горнодобыча', 'ind.3': 'металлургия', 'ind.4': 'химия',
       'ind.5': 'строительство', 'ind.6': 'электротехника', 'ind.7': 'пищевая промышленность', 'ind.8': 'сельское хозяйство',
       'ind.9': 'автомобилестроение', 'ind.10': 'медицина', 'ind.11': 'текстиль', 'ind.12': 'полиграфия',
@@ -113,21 +113,21 @@
       'ig.more': 'Больше фото наших работ — в Instagram @kazpolimer.kz',
       'ig.ct': 'Фото готовых изделий и работ с производства',
       'cl.x1': 'ТОО «Восход Хром»', 'cl.x2': 'ТОО «ДИНА»', 'cl.x3': '«АНВАР»', 'cl.x4': '«ШЕБЕР»',
-      'p3.kicker': '04 · Пластик и 3D-печать',
+      'p3.kicker': 'Пластик и 3D-печать',
       'p3.h2': 'Пластиковые изделия и печать на 3D-принтере',
-      'p3.lead': 'Помимо полиуретана у нас есть собственное производство изделий из пластика на 3D-принтере. Печатаем детали, корпуса и оснастку по вашей модели, чертежу или образцу — прототип, мелкая серия или одна деталь, которой уже нет в продаже.',
+      'p3.lead': 'Детали и корпуса из пластика на 3D-принтере - по образцу, обмерам или модели.',
       'p3.b1t': 'Деталь, которой нет в продаже',
-      'p3.b1x': 'Снятая с производства или редкая пластиковая деталь — печатаем по образцу или обмерам.',
+      'p3.b1x': 'Редкую или снятую с производства - печатаем по образцу.',
       'p3.b2t': 'Прототип перед литьём',
-      'p3.b2x': 'Проверяем геометрию и посадочные места на пластиковом образце до изготовления полиуретановой оснастки.',
+      'p3.b2x': 'Проверяем геометрию до изготовления оснастки.',
       'p3.b3t': 'Сложная геометрия без оснастки',
-      'p3.b3x': 'Внутренние каналы, тонкие рёбра, нестандартные формы — печать не требует пресс-формы.',
+      'p3.b3x': 'Каналы, тонкие рёбра, сложные формы - без пресс-формы.',
       'p3.b4t': 'Единичный заказ и мелкая серия',
-      'p3.b4x': 'От 1 штуки, срок — от 1 дня в зависимости от размера и загрузки принтера.',
+      'p3.b4x': 'От 1 штуки, срок от 1 дня.',
       'p3.ctaTxt': 'Пришлите модель, чертёж или фото детали — посчитаем печать.',
       'p3.cta': 'Обсудить печать в WhatsApp',
       'doc.kicker': 'Знак и документы', 'doc.h2': 'Собственный товарный знак и место в реестре товаропроизводителей',
-      'doc.lead': 'У компании собственный товарный знак: по заявке №135179 Казпатент вынес заключение экспертизы о регистрации знака в трёх классах МКТУ. Плюс 18 наименований продукции в государственном реестре отечественных товаропроизводителей с долей внутристрановой ценности 86,12% — это важно при закупках с требованием местного содержания.',
+      'doc.lead': 'Товарный знак в Казпатенте и 18 позиций в реестре казахстанских товаропроизводителей.',
       'doc.st1': 'наименований продукции в реестре',
       'doc.st2': 'доля внутристрановой ценности (ДВЦ)',
       'doc.st3': 'благодарственное письмо палаты «Атамекен»',
@@ -173,6 +173,19 @@
       'ft.org': 'ТОО «KAZPOLIMER-LTD» · изделия из полиуретана · Актобе — Астана',
       'ft.tm': 'Логотип и название KAZPOLIMER-LTD — товарный знак ТОО «KAZPOLIMER-LTD» (Казпатент, заявка №135179).',
       'ft.c': '© 2012–',
+      'hs.1k': 'Изделия на заказ',
+      'hs.2k': 'Футеровка',
+      'hs.3k': 'Гуммирование',
+      'hs.4k': '3D-печать',
+      'hs.2t': 'Полиуретановая футеровка оборудования',
+      'hs.2x': 'Бункеры, желоба, трубы: с футеровкой служат в 4-5 раз дольше.',
+      'hs.3t': 'Гуммирование роликов и валов',
+      'hs.3x': 'Восстанавливаем полиуретановый слой - дешевле, чем менять узел.',
+      'hs.4t': 'Пластиковые детали на 3D-принтере',
+      'hs.4x': 'Деталь, которой нет в продаже, - по образцу, от 1 штуки.',
+      'hs.prev': 'Предыдущий слайд',
+      'hs.next': 'Следующий слайд',
+      'wa.int': 'Здравствуйте! Интересует: ',
       'wa.greet': 'Здравствуйте! Заявка с сайта kazpolimer-ltd.kz.',
       'wa.name': 'Имя', 'wa.phone': 'Телефон', 'wa.task': 'Задача'
     },
@@ -190,8 +203,8 @@
       'cta.call': 'Call us', 'cta.wa': 'Message on WhatsApp', 'more': 'Learn more',
       'mob.note': 'Aktobe · 14B Sankibai Batyr Ave · Mon–Fri 09:00–18:00, Sat 09:00–13:00',
       'hero.over': 'KAZPOLIMER-LTD LLP · Aktobe · in business since 2012',
-      'hero.h1': 'Polyurethane that extends the service life of industrial equipment',
-      'hero.lead': 'We do not simply sell polyurethane — we extend the life of the parts that wear out first: we manufacture to your drawings and samples from 1 piece and in as little as 1 day, line equipment with polyurethane, cover rollers and shafts, and 3D-print plastic parts. Our own plant in Aktobe, shipping across Kazakhstan, to Russia and the CIS.',
+      'hero.h1': 'Polyurethane parts made to your drawings and samples',
+      'hero.lead': '300+ items - from 1 piece and from 1 day. We extend the service life of industrial equipment.',
       'fact.f1': 'in business since', 'fact.f2': 'product names',
       'fact.f3v': '1 pc.', 'fact.f3': 'minimum order',
       'fact.f4v': 'from 1 day', 'fact.f4': 'production lead time',
@@ -218,9 +231,9 @@
       'dir.c3x': 'Applying and restoring a protective polyurethane layer — instead of replacing worn equipment.',
       'dir.c4t': 'Plastic and 3D printing',
       'dir.c4x': 'We 3D-print plastic parts and housings: a prototype, a small batch, or a replacement for a part no longer sold.',
-      'prod.kicker': '01 · Custom manufacturing',
+      'prod.kicker': 'Made to order',
       'prod.h2': 'Polyurethane products to your drawings and samples',
-      'prod.lead': 'More than 300 product names — from a cuff to a pump impeller. A polyurethane part outlasts a steel or rubber one many times over, and we select the hardness for your load. We accept a drawing, a sketch or a physical sample; the minimum order is 1 piece.',
+      'prod.lead': 'Over 300 items. Send a drawing or a photo of the sample - we make from 1 piece.',
       'prod.g1': 'Polyurethane screens', 'prod.g2': 'Industrial rollers', 'prod.g3': 'Wheels for special vehicles',
       'prod.g4': 'Pump impellers', 'prod.g5': 'Pump volutes', 'prod.g6': 'Scrapers',
       'prod.g7': 'Grooved bars', 'prod.g8': 'Hydrocyclones and pipe fittings',
@@ -228,22 +241,22 @@
       'prod.g.ind': 'For industry', 'prod.g.auto': 'Polyurethane automotive parts', 'prod.g.any': 'And custom work',
       'prod.ctaTxt': 'Send a drawing or a photo of the sample — we will quote the job.',
       'prod.ctaBtn': 'Send via WhatsApp',
-      'fut.kicker': '02 · Lining', 'fut.h2': 'Polyurethane lining of equipment',
-      'fut.lead': 'We protect storage, separation, sorting, transfer and hopper equipment from abrasive wear and aggressive media: a lined unit lasts 4–5 times longer and needs repair at least three times less often.',
+      'fut.kicker': 'Lining', 'fut.h2': 'Polyurethane lining of equipment',
+      'fut.lead': 'We protect hoppers, chutes, screens and pipes from abrasive wear.',
       'fut.s1': 'longer service life of lined equipment',
       'fut.s2': 'fewer repairs — at the very least',
       'fut.b1t': 'Lower repair costs',
-      'fut.b1x': 'Savings compared with unlined steel equipment and rubber lining.',
+      'fut.b1x': 'Cheaper than unlined steel or rubber lining.',
       'fut.b2t': 'Withstands impact loads',
-      'fut.b2x': 'Polyurethane is elastic and resistant to tearing and cutting — damage is reduced, often eliminated entirely.',
+      'fut.b2x': 'Elastic, resists tearing and cuts.',
       'fut.b3t': 'No sticking or freezing on',
-      'fut.b3x': 'A smooth non-porous surface with a low friction coefficient — material does not stick or freeze to it.',
+      'fut.b3x': 'Smooth surface: material does not stick or freeze.',
       'fut.b4t': 'Runs quieter',
       'fut.b4x': 'A polyurethane layer noticeably reduces equipment noise.',
       'fut.p1': 'Lined hopper', 'fut.p2': 'Lined pipe fitting',
       'fut.p3': 'Pipe with internal lining', 'fut.p4': 'Lining plates',
-      'gum.kicker': '03 · Roll covering', 'gum.h2': 'Polyurethane covering of rollers and shafts',
-      'gum.lead': 'Applying and restoring the protective layer is a cost-effective alternative to repairing or replacing worn equipment: lower cost, shorter downtime, several times longer service life. The coating can be renewed repeatedly.',
+      'gum.kicker': 'Roller covering', 'gum.h2': 'Polyurethane covering of rollers and shafts',
+      'gum.lead': 'We apply and restore the polyurethane layer - cheaper than replacing the unit.',
       'gum.b1t': 'Uniform elastic coating',
       'gum.b1x': 'High wear and cut resistance throughout the full thickness of the layer.',
       'gum.b2t': 'Strong adhesion',
@@ -252,21 +265,21 @@
       'gum.b3x': 'Low internal heat generation while the coating is in service.',
       'gum.b4t': 'Handles alternating loads',
       'gum.b4x': 'Withstands high dynamic and alternating loads.',
-      'p3.kicker': '04 · Plastic and 3D printing',
+      'p3.kicker': 'Plastic and 3D printing',
       'p3.h2': 'Plastic products and 3D printing',
-      'p3.lead': 'Besides polyurethane, we run our own production of plastic items on a 3D printer. We print parts, housings and tooling from your model, drawing or sample — a prototype, a small batch, or a single part that is no longer sold anywhere.',
+      'p3.lead': 'Plastic parts and housings on a 3D printer - from a sample, measurements or a model.',
       'p3.b1t': 'A part you cannot buy',
-      'p3.b1x': 'A discontinued or rare plastic part — we print it from your sample or measurements.',
+      'p3.b1x': 'Rare or discontinued - we print it from a sample.',
       'p3.b2t': 'Prototype before casting',
-      'p3.b2x': 'We check the geometry and the fit on a plastic sample before making polyurethane tooling.',
+      'p3.b2x': 'We check the geometry before the tooling is made.',
       'p3.b3t': 'Complex geometry, no tooling',
-      'p3.b3x': 'Internal channels, thin ribs, unusual shapes — printing needs no mould.',
+      'p3.b3x': 'Channels, thin ribs, complex shapes - no mould needed.',
       'p3.b4t': 'Single item or small batch',
-      'p3.b4x': 'From 1 piece, in as little as 1 day depending on size and printer load.',
+      'p3.b4x': 'From 1 piece, lead time from 1 day.',
       'p3.ctaTxt': 'Send a model, a drawing or a photo of the part — we will quote the print.',
       'p3.cta': 'Discuss printing on WhatsApp',
       'ind.kicker': 'Industries', 'ind.h2': 'Where it is used',
-      'ind.lead': 'Polyurethane works where rubber and steel give up: abrasion, impact, aggressive media. Wherever that wear occurs, we extend the life of the equipment.',
+      'ind.lead': 'Polyurethane works where rubber and steel wear out fast.',
       'ind.1': 'oil and gas', 'ind.2': 'mining', 'ind.3': 'metallurgy', 'ind.4': 'chemicals',
       'ind.5': 'construction', 'ind.6': 'electrical engineering', 'ind.7': 'food industry', 'ind.8': 'agriculture',
       'ind.9': 'automotive', 'ind.10': 'medicine', 'ind.11': 'textiles', 'ind.12': 'printing industry',
@@ -299,7 +312,7 @@
       'ig.ct': 'Photos of finished parts and work from the shop floor',
       'cl.x1': 'Voskhod Chrome LLP', 'cl.x2': 'DINA LLP', 'cl.x3': 'ANVAR', 'cl.x4': 'SHEBER',
       'doc.kicker': 'Trademark and documents', 'doc.h2': 'Our own trademark and a place in the register of manufacturers',
-      'doc.lead': 'The company has its own trademark: on application No. 135179 Kazpatent issued an examination decision to register the mark in three Nice classes. In addition, 18 of our product names are entered in the state register of domestic manufacturers with a local content value share of 86.12% — which matters in tenders with local content requirements.',
+      'doc.lead': 'A trademark filed with Kazpatent and 18 items in the register of Kazakhstan manufacturers.',
       'doc.st1': 'product names in the register',
       'doc.st2': 'local content value share',
       'doc.st3': 'letter of appreciation from the Atameken chamber',
@@ -345,6 +358,19 @@
       'ft.org': 'KAZPOLIMER-LTD LLP · polyurethane products · Aktobe — Astana',
       'ft.tm': 'The KAZPOLIMER-LTD logo and name are a trademark of KAZPOLIMER-LTD LLP (Kazpatent, application No. 135179).',
       'ft.c': '© 2012–',
+      'hs.1k': 'Custom parts',
+      'hs.2k': 'Lining',
+      'hs.3k': 'Roller covering',
+      'hs.4k': '3D printing',
+      'hs.2t': 'Polyurethane lining for equipment',
+      'hs.2x': 'Hoppers, chutes, pipes: lined, they last 4-5 times longer.',
+      'hs.3t': 'Polyurethane covering of rollers and shafts',
+      'hs.3x': 'We restore the polyurethane layer - cheaper than replacing the unit.',
+      'hs.4t': 'Plastic parts on a 3D printer',
+      'hs.4x': 'A part you cannot buy - from a sample, from 1 piece.',
+      'hs.prev': 'Previous slide',
+      'hs.next': 'Next slide',
+      'wa.int': 'Hello! I am interested in: ',
       'wa.greet': 'Hello! A request from the kazpolimer-ltd.kz website.',
       'wa.name': 'Name', 'wa.phone': 'Phone', 'wa.task': 'Task'
     }
@@ -406,6 +432,18 @@
       b.setAttribute('aria-pressed', String(on));
     });
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    updateWaLinks();
+  }
+
+  /* Ссылки WhatsApp с названием услуги в тексте. Собираются заранее (при смене языка
+     и слайда), а не в момент клика - чтобы не затирать то, что допишет трекер. */
+  function updateWaLinks() {
+    var dict = I18N[curLang] || I18N.ru;
+    document.querySelectorAll('a[data-wa-key]').forEach(function (a) {
+      var name = dict[a.getAttribute('data-wa-key')] || '';
+      a.href = 'https://wa.me/77778000789?text=' + encodeURIComponent(dict['wa.int'] + name);
+      if (a.classList.contains('c-wa')) a.setAttribute('aria-label', 'WhatsApp: ' + name);
+    });
   }
 
   document.querySelectorAll('.lang button').forEach(function (b) {
@@ -460,8 +498,63 @@
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
 
+  /* ═══════════ Герой: слайдер направлений ═══════════
+     Листается сам: следующий слайд включается по animationend полосы прогресса
+     на активной вкладке. Пауза (фокус с клавиатуры, герой вне экрана, вкладка скрыта)
+     - это animation-play-state, поэтому таймер не сбивается. При reduced-motion
+     анимации нет - и автолистания тоже, остаются стрелки, вкладки и свайп. */
+  var hero = document.getElementById('glavnaya');
+  var hsTexts = hero.querySelectorAll('.hs-t');
+  var hsImgs = hero.querySelectorAll('.hs-img');
+  var hsTabs = hero.querySelectorAll('.hs-tab');
+  var heroWa = document.getElementById('heroWa');
+  var hsCur = 0;
+  function hsGo(i) {
+    var n = hsTexts.length;
+    hsCur = (i + n) % n;
+    for (var j = 0; j < n; j++) {
+      var on = j === hsCur;
+      hsTexts[j].classList.toggle('is-on', on);
+      hsTexts[j].setAttribute('aria-hidden', String(!on));
+      hsImgs[j].classList.toggle('is-on', on);
+      hsTabs[j].classList.toggle('is-on', on);
+      if (on) hsTabs[j].setAttribute('aria-current', 'true'); else hsTabs[j].removeAttribute('aria-current');
+    }
+    heroWa.setAttribute('data-wa-key', 'hs.' + (hsCur + 1) + 'k');
+    updateWaLinks();
+  }
+  hsTabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { hsGo(i); });
+    t.querySelector('.hs-bar').addEventListener('animationend', function () {
+      if (i === hsCur) hsGo(hsCur + 1);
+    });
+  });
+  hero.querySelectorAll('[data-hs]').forEach(function (b) {
+    b.addEventListener('click', function () { hsGo(hsCur + (b.getAttribute('data-hs') === 'next' ? 1 : -1)); });
+  });
+  var hsHold = { focus: false, off: false };
+  function hsPause() {
+    hero.classList.toggle('is-paused', hsHold.focus || hsHold.off || document.hidden);
+  }
+  /* наведение мыши не держит слайдер: герой - весь первый экран, курсор почти всегда над ним */
+  hero.addEventListener('focusin', function (e) { hsHold.focus = e.target.matches(':focus-visible'); hsPause(); });
+  hero.addEventListener('focusout', function () { hsHold.focus = false; hsPause(); });
+  document.addEventListener('visibilitychange', hsPause);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) { hsHold.off = !en[0].isIntersecting; hsPause(); }).observe(hero);
+  }
+  var hsX = null, hsY = 0;
+  hero.addEventListener('touchstart', function (e) { hsX = e.touches[0].clientX; hsY = e.touches[0].clientY; }, { passive: true });
+  hero.addEventListener('touchend', function (e) {
+    if (hsX === null) return;
+    var dx = e.changedTouches[0].clientX - hsX, dy = e.changedTouches[0].clientY - hsY;
+    hsX = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) hsGo(hsCur + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  updateWaLinks();
+
   /* лёгкий каскад для сеток */
-  document.querySelectorAll('.dir-grid, .prod-grid, .adv-grid, .steps, .cl-grid, .chips-lg, .doc-stats, .doc-grid').forEach(function (grid) {
+  document.querySelectorAll('.prod-grid, .adv-grid, .steps, .cl-grid, .chips-lg, .doc-stats, .doc-grid').forEach(function (grid) {
     Array.prototype.forEach.call(grid.children, function (child, i) {
       child.style.transitionDelay = (Math.min(i, 8) * 60) + 'ms';
     });
