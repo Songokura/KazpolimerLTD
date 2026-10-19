@@ -167,7 +167,7 @@ h3{ font-size:clamp(18px, 1.6vw, 21px); line-height:1.3; }
 body.menu-open{ overflow:hidden; }
 
 /* ── секции ──────────────────────────────────────────────────── */
-.sec{ position:relative; padding:96px 0; scroll-margin-top:var(--hdr-h); }
+.sec{ position:relative; padding:80px 0; scroll-margin-top:var(--hdr-h); }
 .sec-dark{ background:var(--dark); }
 .sec-dark#izdeliya, .sec-dark#preimushchestva{ background:var(--dark-2); }
 .sec-line{ border-top:1px solid var(--line-d); }
@@ -235,7 +235,7 @@ body.menu-open{ overflow:hidden; }
   font-size:14.5px; font-weight:500; color:var(--muted-d); transition:color .2s; }
 .hero-ig:hover{ color:var(--yellow); }
 @media (prefers-reduced-motion: reduce){ .hero-txt, .hero-fig{ animation:none; } }
-.hs-t{ grid-area:1/1; opacity:0; visibility:hidden; transform:translateY(16px);
+.hs-t{ grid-area:1/1; opacity:0; visibility:hidden; transform:translateX(36px);
   transition:opacity .45s, transform .6s cubic-bezier(.2,.7,.2,1), visibility 0s .6s; }
 .hs-t.is-on{ opacity:1; visibility:visible; transform:none;
   transition:opacity .6s .15s, transform .7s cubic-bezier(.2,.7,.2,1) .15s, visibility 0s; }
@@ -256,19 +256,15 @@ body.menu-open{ overflow:hidden; }
 .hs-tab:hover, .hs-tab.is-on{ color:var(--white); }
 .hs-bar{ position:absolute; left:0; right:0; top:-2px; height:2px; background:var(--yellow);
   transform:scaleX(0); transform-origin:left; }
-.hs-tab.is-on .hs-bar{ animation:hsbar 6s linear forwards; }
-.hero.is-paused .hs-bar{ animation-play-state:paused; }
-@keyframes hsbar{ to{ transform:scaleX(1); } }
 .hs-figs{ position:relative; display:grid; width:min(430px, 100%); aspect-ratio:1; margin-inline:auto; }
 .hs-img{ grid-area:1/1; width:100%; height:100%; object-fit:contain; opacity:0;
-  transform:scale(.88) rotate(-8deg); filter:drop-shadow(0 30px 50px rgba(0,0,0,.45));
+  transform:translateX(60px) scale(.9) rotate(-6deg); filter:drop-shadow(0 30px 50px rgba(0,0,0,.45));
   transition:opacity .45s, transform .8s cubic-bezier(.2,.7,.2,1); }
 .hs-img.is-on{ opacity:1; transform:none; transition:opacity .6s .1s, transform .9s cubic-bezier(.2,.7,.2,1) .1s; }
 .hs-svg{ display:grid; place-items:center; color:var(--yellow); filter:none; }
 .hs-svg svg{ width:82%; height:auto; }
 @media (prefers-reduced-motion: reduce){
   .hs-t, .hs-t.is-on, .hs-img, .hs-img.is-on{ transition:none; transform:none; }
-  .hs-tab.is-on .hs-bar{ animation:none; transform:scaleX(1); }
 }
 
 /* значок WhatsApp на карточке: сразу в чат с названием изделия */
@@ -547,7 +543,7 @@ body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 .dst dt span{ font-size:.55em; margin-left:1px; }
 .dst dd{ margin-top:10px; font-size:14.5px; color:var(--muted-d); line-height:1.45; }
 
-.doc-grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:22px; }
+.doc-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px; }
 .doc{
   background:var(--panel); border:1px solid var(--line-d);
   display:flex; flex-direction:column; overflow:hidden;
@@ -935,3 +931,51 @@ body.lbx-open{ overflow:hidden; }
 /* фокус с клавиатуры виден на любом интерактиве */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
   outline:2px solid var(--yellow); outline-offset:3px; }
+
+/* ── компактная версия (19.10.2026): меньше листать ── */
+.nomen-more summary{ cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:10px;
+  color:var(--yellow); margin-bottom:0; }
+.nomen-more summary::-webkit-details-marker{ display:none; }
+.nomen-more summary::after{ content:"+"; font-size:22px; line-height:1; transition:transform .25s; }
+.nomen-more[open] summary::after{ transform:rotate(45deg); }
+.nomen-more[open] summary{ margin-bottom:16px; }
+.doc-fig-logo{ display:flex; align-items:center; justify-content:center; padding:24px; aspect-ratio:1.42; }
+.doc-fig-logo img{ aspect-ratio:auto; width:auto; max-width:86%; max-height:100%; object-fit:contain; }
+.blist li, .glist li{ padding:16px 0; }
+.blist h3, .glist h3{ margin-bottom:0; }
+@media (max-width:960px){
+  .doc-grid{ grid-template-columns:1fr; gap:12px; }
+  .doc{ flex-direction:row; }
+  .doc-fig{ flex:0 0 120px; width:120px; }
+  .doc-fig img{ aspect-ratio:auto; height:100%; min-height:150px; }
+  .doc-fig-logo{ aspect-ratio:auto; padding:10px; }
+  .doc-fig-logo img{ min-height:0; height:auto; }
+  .doc-pages{ display:none; }
+  .doc-zoom{ width:34px; height:34px; right:8px; bottom:8px; }
+  .doc-body{ padding:16px 16px 18px; gap:8px; }
+  .doc-meta{ font-size:11px; }
+  .doc-act .dlink{ padding:9px 12px; font-size:13.5px; }
+}
+@media (max-width:640px){
+  .sec{ padding:52px 0; }
+  .sec-head{ margin-bottom:28px; }
+  .adv-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; }
+  .adv{ padding:16px; }
+  .adv-ic{ width:26px; height:26px; margin-bottom:10px; }
+  .adv h3{ font-size:15px; margin-bottom:0; }
+  .adv-rate, .adv-badge{ grid-column:span 1; }
+  .rate-n{ font-size:34px; }
+  .adv-badge{ display:none; }
+  .adv-rate p, .adv-badge p{ font-size:13px; }
+  .p3-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; }
+  .p3{ padding:16px; }
+  .p3 h3{ font-size:15px; margin-bottom:0; }
+  .steps{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px 14px; }
+  .step p{ font-size:14px; }
+  .gum-fig{ width:min(240px,64%); }
+  .gum-body{ gap:40px; }
+  .cl-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:8px; }
+  .cl-grid li{ padding:10px; }
+  .cl-grid img{ max-height:46px; }
+  .fut-body{ gap:28px; }
+}

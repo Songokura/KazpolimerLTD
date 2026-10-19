@@ -63,7 +63,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700;800&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700;800&family=Onest:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="styles.css?v=20261019-3">
+<link rel="stylesheet" href="styles.css?v=20261019-4">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -233,22 +233,6 @@
 </div>
 </div>
 
-<!-- ═══════════ ПРИНЦИП ═══════════ -->
-<section class="sec creed-sec" id="princip">
-  <div class="wrap">
-    <div class="creed rv">
-      <p class="kicker"><span data-i18n="cr.kicker">Принцип</span></p>
-      <p class="creed-1" data-i18n="cr.l1">Мы не продаём просто полиуретан.</p>
-      <p class="creed-2" data-i18n="cr.l2">Мы увеличиваем ресурс промышленного оборудования.</p>
-    </div>
-    <ul class="creed-pts">
-      <li class="cpt rv"><span class="cpt-n" data-i18n="cr.p1n">×4-5</span><p data-i18n="cr.p1x">во столько раз дольше служит оборудование с полиуретановой футеровкой по сравнению с нефутерованным</p></li>
-      <li class="cpt rv"><span class="cpt-n" data-i18n="cr.p2n">Вместо замены</span><p data-i18n="cr.p2x">изношенный вал или ролик восстанавливаем гуммированием - покрытие можно обновлять неоднократно</p></li>
-      <li class="cpt rv"><span class="cpt-n" data-i18n="cr.p3n">От 1 дня</span><p data-i18n="cr.p3x">деталь, из-за которой стоит линия, изготовим от 1 штуки - это короче, чем ждать поставку</p></li>
-    </ul>
-  </div>
-</section>
-
 
 <!-- ═══════════ 01 ИЗДЕЛИЯ ═══════════ -->
 <section class="sec sec-dark sec-line" id="izdeliya">
@@ -275,7 +259,8 @@
     </a>
 
     <div class="nomen rv" id="nomenklatura">
-      <p class="nomen-t" data-i18n="prod.also">Также изготавливаем:</p>
+      <details class="nomen-more">
+      <summary class="nomen-t"><span data-i18n="prod.also">Ещё 30+ изделий - открыть список</span></summary>
       <p class="nomen-g" data-i18n="prod.g.ind">Для промышленности</p>
       <ul class="chips">
         <li data-i18n="mq.1">опорные части</li>
@@ -317,6 +302,7 @@
         <li data-i18n="mq.8">колёса для спецтехники</li>
         <li data-i18n="mq.14">нестандартные изделия</li>
       </ul>
+      </details>
       <div class="nomen-cta">
         <p data-i18n="prod.ctaTxt">Пришлите чертёж или фото образца - посчитаем изготовление.</p>
         <a class="btn btn-wa" href="https://wa.me/77778000789" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#ic-wa"/></svg><span data-i18n="prod.ctaBtn">Отправить в WhatsApp</span></a>
@@ -333,22 +319,12 @@
       <h2 data-i18n="fut.h2">Полиуретановая футеровка оборудования</h2>
       <p class="sec-lead" data-i18n="fut.lead">Защищаем бункеры, желоба, грохоты и трубы от абразивного износа.</p>
     </div>
-    <div class="fut-stats">
-      <div class="stat rv">
-        <span class="stat-n">×4-5</span>
-        <span class="stat-x" data-i18n="fut.s1">дольше служит футерованное оборудование</span>
-      </div>
-      <div class="stat rv">
-        <span class="stat-n">×3</span>
-        <span class="stat-x" data-i18n="fut.s2">реже ремонты - как минимум</span>
-      </div>
-    </div>
     <div class="fut-body">
       <ol class="blist">
-        <li class="rv"><div><h3 data-i18n="fut.b1t">Меньше затрат на ремонт</h3><p data-i18n="fut.b1x">Дешевле, чем сталь без футеровки и резина.</p></div></li>
-        <li class="rv"><div><h3 data-i18n="fut.b2t">Держит ударные нагрузки</h3><p data-i18n="fut.b2x">Эластичен, не рвётся и не режется.</p></div></li>
-        <li class="rv"><div><h3 data-i18n="fut.b3t">Без налипания и намерзания</h3><p data-i18n="fut.b3x">Гладкая поверхность: материал не липнет и не мёрзнет.</p></div></li>
-        <li class="rv"><div><h3 data-i18n="fut.b4t">Тише работает</h3><p data-i18n="fut.b4x">Полиуретановый слой заметно снижает шум оборудования.</p></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b1t">Меньше затрат на ремонт</h3></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b2t">Держит ударные нагрузки</h3></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b3t">Без налипания и намерзания</h3></div></li>
+        <li class="rv"><div><h3 data-i18n="fut.b4t">Тише работает</h3></div></li>
       </ol>
       <div class="fut-gal">
         <figure class="f-card rv"><img src="assets/lining-hopper.webp" alt="Приёмный бункер с жёлтой полиуретановой футеровкой" width="394" height="296" loading="lazy" decoding="async"><figcaption class="c-foot"><span data-i18n="fut.p1">Бункер с футеровкой</span><a class="c-wa" href="https://wa.me/77778000789" data-wa-key="fut.p1" target="_blank" rel="noopener" aria-label="WhatsApp: Бункер с футеровкой"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#ic-wa"/></svg></a></figcaption></figure>
@@ -376,10 +352,10 @@
         <img class="gum-img2" src="assets/rollers-white.webp" alt="Два вала с белым полиуретановым покрытием" width="748" height="772" loading="lazy" decoding="async">
       </div>
       <ul class="glist">
-        <li class="rv"><h3 data-i18n="gum.b1t">Однородное эластичное покрытие</h3><p data-i18n="gum.b1x">Высокая износостойкость и стойкость к порезам по всей толщине слоя.</p></li>
-        <li class="rv"><h3 data-i18n="gum.b2t">Высокая адгезия</h3><p data-i18n="gum.b2x">Надёжное сцепление покрытия с металлической поверхностью вала.</p></li>
-        <li class="rv"><h3 data-i18n="gum.b3t">Малый внутренний разогрев</h3><p data-i18n="gum.b3x">Низкое внутреннее тепловыделение при работе покрытия.</p></li>
-        <li class="rv"><h3 data-i18n="gum.b4t">Держит переменные нагрузки</h3><p data-i18n="gum.b4x">Выдерживает высокие динамические и знакопеременные нагрузки.</p></li>
+        <li class="rv"><h3 data-i18n="gum.b1t">Однородное эластичное покрытие</h3></li>
+        <li class="rv"><h3 data-i18n="gum.b2t">Высокая адгезия</h3></li>
+        <li class="rv"><h3 data-i18n="gum.b3t">Малый внутренний разогрев</h3></li>
+        <li class="rv"><h3 data-i18n="gum.b4t">Держит переменные нагрузки</h3></li>
       </ul>
     </div>
   </div>
@@ -394,10 +370,10 @@
       <p class="sec-lead" data-i18n="p3.lead">Детали и корпуса из пластика на 3D-принтере - по образцу, обмерам или модели.</p>
     </div>
     <div class="p3-grid">
-      <div class="p3 rv"><h3 data-i18n="p3.b1t">Деталь, которой нет в продаже</h3><p data-i18n="p3.b1x">Редкую или снятую с производства - печатаем по образцу.</p></div>
-      <div class="p3 rv"><h3 data-i18n="p3.b2t">Прототип перед литьём</h3><p data-i18n="p3.b2x">Проверяем геометрию до изготовления оснастки.</p></div>
-      <div class="p3 rv"><h3 data-i18n="p3.b3t">Сложная геометрия без оснастки</h3><p data-i18n="p3.b3x">Каналы, тонкие рёбра, сложные формы - без пресс-формы.</p></div>
-      <div class="p3 rv"><h3 data-i18n="p3.b4t">Единичный заказ и мелкая серия</h3><p data-i18n="p3.b4x">От 1 штуки, срок от 1 дня.</p></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b1t">Деталь, которой нет в продаже</h3></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b2t">Прототип перед литьём</h3></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b3t">Сложная геометрия без оснастки</h3></div>
+      <div class="p3 rv"><h3 data-i18n="p3.b4t">Единичный заказ и мелкая серия</h3></div>
     </div>
     <div class="nomen-cta p3-cta rv">
       <p data-i18n="p3.ctaTxt">Пришлите модель, чертёж или фото детали - посчитаем печать.</p>
@@ -456,13 +432,13 @@
       <h2 data-i18n="adv.h2">Производство, которому доверяют промышленные предприятия</h2>
     </div>
     <div class="adv-grid">
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6 4V10l6 4V6l6 4v11z"/><path d="M3 21h18"/></svg><h3 data-i18n="adv.a1t">Собственное производство</h3><p data-i18n="adv.a1x">Полный производственный цикл в Актобе.</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><h3 data-i18n="adv.a2t">Изготовление от 1 дня</h3><p data-i18n="adv.a2x">Собственная площадка - без очередей подрядчиков.</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg><h3 data-i18n="adv.a3t">Гибкие условия оплаты</h3><p data-i18n="adv.a3x">Условия согласуем под задачу и объём.</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg><h3 data-i18n="adv.a4t">Высокое качество продукции</h3><p data-i18n="adv.a4x">Продукция со знаком «Сделано в Казахстане».</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1zM14 10h5l4 4v2h-9"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><h3 data-i18n="adv.a5t">Казахстан, Россия, СНГ</h3><p data-i18n="adv.a5x">Отгружаем в любой регион Казахстана, в Россию и страны СНГ.</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg><h3 data-i18n="adv.a6t">Минимальный заказ - 1 шт.</h3><p data-i18n="adv.a6x">Берём и единичные, и серийные заказы.</p></div>
-      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9m4 0 3 4"/></svg><h3 data-i18n="adv.a7t">Собственный товарный знак</h3><p data-i18n="adv.a7x">Логотип и название KAZPOLIMER-LTD - наш товарный знак: заявка №135179 в Казпатенте, классы МКТУ 07, 17, 19.</p></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l6 4V10l6 4V6l6 4v11z"/><path d="M3 21h18"/></svg><h3 data-i18n="adv.a1t">Собственное производство</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><h3 data-i18n="adv.a2t">Изготовление от 1 дня</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg><h3 data-i18n="adv.a3t">Гибкие условия оплаты</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg><h3 data-i18n="adv.a4t">Высокое качество продукции</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1zM14 10h5l4 4v2h-9"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><h3 data-i18n="adv.a5t">Казахстан, Россия, СНГ</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg><h3 data-i18n="adv.a6t">Минимальный заказ - 1 шт.</h3></div>
+      <div class="adv rv"><svg class="adv-ic" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9m4 0 3 4"/></svg><h3 data-i18n="adv.a7t">Собственный товарный знак</h3></div>
       <div class="adv adv-rate rv">
         <span class="rate-n">5,0</span>
         <span class="rate-stars" aria-hidden="true">★★★★★</span>
@@ -485,24 +461,19 @@
       <p class="sec-lead" data-i18n="doc.lead">Товарный знак в Казпатенте и 18 позиций в реестре казахстанских товаропроизводителей.</p>
     </div>
 
-    <article class="tmk rv">
-      <button class="tmk-fig" type="button" data-doc="znak" aria-label="Открыть заключение Казпатента по товарному знаку" data-i18n-aria="doc.d3a">
+    <div class="doc-grid">
+
+    <article class="doc rv">
+      <button class="doc-fig doc-fig-logo" type="button" data-doc="znak" aria-label="Открыть заключение Казпатента по товарному знаку" data-i18n-aria="doc.d3a">
         <img src="assets/docs/trademark.webp" alt="Товарный знак KAZPOLIMER-LTD - комбинированный знак: фирменный ромб и название компании" width="946" height="710" loading="lazy" decoding="async">
         <span class="doc-pages" data-i18n="doc.d3p">2 страницы</span>
         <span class="doc-zoom" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm5 12 4 4M11 8v6M8 11h6"/></svg>
           </span>
       </button>
-      <div class="tmk-body">
+      <div class="doc-body">
         <p class="doc-meta" data-i18n="doc.d3m">Казпатент · заявка №135179 от 11.10.2024</p>
         <h3 data-i18n="doc.d3t">Товарный знак KAZPOLIMER-LTD</h3>
-        <p data-i18n="doc.d3x">Фирменный ромб и название KAZPOLIMER-LTD. Казпатент вынес заключение о регистрации в трёх классах МКТУ.</p>
-        <p class="tmk-cl-h" data-i18n="doc.cls">Классы МКТУ</p>
-        <ul class="tmk-cls">
-          <li><span data-i18n="doc.c07">07 - валы, катки, колёса для спецтехники, манжеты, сальники, шестерни и мягкие соединения из полиуретана</span></li>
-          <li><span data-i18n="doc.c17">17 - бруски, манжеты, патрубки, пластины, сальники и сита из полиуретана</span></li>
-          <li><span data-i18n="doc.c19">19 - полиуретановые опорные части</span></li>
-        </ul>
         <div class="doc-act">
           <button class="dlink" type="button" data-doc="znak">
             <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
@@ -516,14 +487,6 @@
       </div>
     </article>
 
-    <dl class="doc-stats rv">
-      <div class="dst"><dt>18</dt><dd data-i18n="doc.st1">наименований продукции в реестре</dd></div>
-      <div class="dst"><dt>86,12<span>%</span></dt><dd data-i18n="doc.st2">доля внутристрановой ценности (ДВЦ)</dd></div>
-      <div class="dst"><dt>2022</dt><dd data-i18n="doc.st3">благодарственное письмо палаты «Атамекен»</dd></div>
-    </dl>
-
-    <div class="doc-grid">
-
       <article class="doc rv">
         <button class="doc-fig doc-fig-top" type="button" data-doc="reestr" aria-label="Открыть выписку из реестра" data-i18n-aria="doc.d1a">
           <img src="assets/docs/reestr-thumb.webp" alt="Выписка из реестра казахстанских товаропроизводителей на ТОО «KAZPOLIMER-LTD»" width="820" height="580" loading="lazy" decoding="async">
@@ -535,7 +498,7 @@
         <div class="doc-body">
           <p class="doc-meta" data-i18n="doc.d1m">БИН 151040025562 · выписка от 02.08.2026</p>
           <h3 data-i18n="doc.d1t">Выписка из реестра казахстанских товаропроизводителей</h3>
-          <p data-i18n="doc.d1x">В реестре 18 позиций: манжеты, валы, катки, шестерни, сита, ролики, сайлентблоки и другие.</p>
+          
           <div class="doc-act">
             <button class="dlink" type="button" data-doc="reestr">
               <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
@@ -559,7 +522,7 @@
         <div class="doc-body">
           <p class="doc-meta" data-i18n="doc.d2m">Актюбинская область · 2022 год</p>
           <h3 data-i18n="doc.d2t">Алғыс хат Палаты предпринимателей «Атамекен»</h3>
-          <p data-i18n="doc.d2x">От Палаты предпринимателей Актюбинской области - за участие в конкурсе «Лучший товар Казахстана».</p>
+          
           <div class="doc-act">
             <button class="dlink" type="button" data-doc="atameken">
               <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
@@ -717,6 +680,6 @@
   <p class="lbx-cap"><span id="lbxCap"></span><span class="lbx-num" id="lbxNum"></span></p>
 </div>
 
-<script src="script.js?v=20261019-3" defer></script>
+<script src="script.js?v=20261019-4" defer></script>
 </body>
 </html>

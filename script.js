@@ -52,7 +52,7 @@
       'prod.g1': 'Полиуретановые сита', 'prod.g2': 'Промышленные катки', 'prod.g3': 'Колёса для спецтехники',
       'prod.g4': 'Рабочие колёса насосов', 'prod.g5': 'Улитки насосов', 'prod.g6': 'Скребки',
       'prod.g7': 'Брус с пазами', 'prod.g8': 'Гидроциклоны и патрубки',
-      'prod.also': 'Также изготавливаем:',
+      'prod.also': 'Ещё 30+ изделий - открыть список',
       'prod.g.ind': 'Для промышленности', 'prod.g.auto': 'Автокомпоненты из полиуретана', 'prod.g.any': 'И нестандарт',
       'prod.ctaTxt': 'Пришлите чертёж или фото образца - посчитаем изготовление.',
       'prod.ctaBtn': 'Отправить в WhatsApp',
@@ -239,7 +239,7 @@
       'prod.g1': 'Polyurethane screens', 'prod.g2': 'Industrial rollers', 'prod.g3': 'Wheels for special vehicles',
       'prod.g4': 'Pump impellers', 'prod.g5': 'Pump volutes', 'prod.g6': 'Scrapers',
       'prod.g7': 'Grooved bars', 'prod.g8': 'Hydrocyclones and pipe fittings',
-      'prod.also': 'We also make:',
+      'prod.also': '30+ more products - open the list',
       'prod.g.ind': 'For industry', 'prod.g.auto': 'Polyurethane automotive parts', 'prod.g.any': 'And custom work',
       'prod.ctaTxt': 'Send a drawing or a photo of the sample - we will quote the job.',
       'prod.ctaBtn': 'Send via WhatsApp',
@@ -503,35 +503,46 @@
   }
 
   /* ═══════════ Герой: слайдер направлений ═══════════
-     Листается сам: следующий слайд включается по animationend полосы прогресса
-     на активной вкладке. Пауза (фокус с клавиатуры, герой вне экрана, вкладка скрыта)
-     - это animation-play-state, поэтому таймер не сбивается. При reduced-motion
-     анимации нет - и автолистания тоже, остаются стрелки, вкладки и свайп. */
+     Листается сам каждые 5 с, полоса на активной вкладке показывает остаток.
+     Таймер на JS, а не на CSS-анимации: animation глушится системной настройкой
+     «уменьшить движение», и у части посетителей слайдер стоял. Пауза - герой
+     вне экрана, вкладка скрыта, фокус с клавиатуры внутри героя. */
   var hero = document.getElementById('glavnaya');
   var hsTexts = hero.querySelectorAll('.hs-t');
   var hsImgs = hero.querySelectorAll('.hs-img');
   var hsTabs = hero.querySelectorAll('.hs-tab');
   var heroWa = document.getElementById('heroWa');
-  var hsCur = 0;
+  var HS_MS = 5000;
+  var hsCur = 0, hsLeft = HS_MS, hsLast = 0;
   function hsGo(i) {
     var n = hsTexts.length;
     hsCur = (i + n) % n;
+    hsLeft = HS_MS;
     for (var j = 0; j < n; j++) {
       var on = j === hsCur;
       hsTexts[j].classList.toggle('is-on', on);
       hsTexts[j].setAttribute('aria-hidden', String(!on));
       hsImgs[j].classList.toggle('is-on', on);
       hsTabs[j].classList.toggle('is-on', on);
+      hsTabs[j].querySelector('.hs-bar').style.transform = 'scaleX(0)';
       if (on) hsTabs[j].setAttribute('aria-current', 'true'); else hsTabs[j].removeAttribute('aria-current');
     }
     heroWa.setAttribute('data-wa-key', 'hs.' + (hsCur + 1) + 'k');
     updateWaLinks();
   }
+  function hsTick(t) {
+    var dt = hsLast ? Math.min(t - hsLast, 100) : 0;
+    hsLast = t;
+    if (!hero.classList.contains('is-paused')) {
+      hsLeft -= dt;
+      if (hsLeft <= 0) hsGo(hsCur + 1);
+      hsTabs[hsCur].querySelector('.hs-bar').style.transform = 'scaleX(' + (1 - hsLeft / HS_MS).toFixed(3) + ')';
+    }
+    requestAnimationFrame(hsTick);
+  }
+  requestAnimationFrame(hsTick);
   hsTabs.forEach(function (t, i) {
     t.addEventListener('click', function () { hsGo(i); });
-    t.querySelector('.hs-bar').addEventListener('animationend', function () {
-      if (i === hsCur) hsGo(hsCur + 1);
-    });
   });
   hero.querySelectorAll('[data-hs]').forEach(function (b) {
     b.addEventListener('click', function () { hsGo(hsCur + (b.getAttribute('data-hs') === 'next' ? 1 : -1)); });
@@ -556,6 +567,15 @@
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) hsGo(hsCur + (dx < 0 ? 1 : -1));
   }, { passive: true });
   updateWaLinks();
+
+  /* якорь внутри свёрнутого <details> (например #avtokomponenty из рекламы) - раскрыть список */
+  function openHashDetails() {
+    var el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    var d = el && el.closest('details');
+    if (d && !d.open) { d.open = true; el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openHashDetails);
+  openHashDetails();
 
   /* лёгкий каскад для сеток */
   document.querySelectorAll('.prod-grid, .adv-grid, .steps, .cl-grid, .chips-lg, .doc-stats, .doc-grid').forEach(function (grid) {
