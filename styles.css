@@ -272,8 +272,8 @@ body.menu-open{ overflow:hidden; }
 }
 
 /* значок WhatsApp на карточке: сразу в чат с названием изделия */
-.c-foot{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.c-wa{ flex:0 0 auto; width:40px; height:40px; border-radius:50%; display:grid; place-items:center;
+.c-foot{ display:block; }
+.c-wa{ position:absolute; top:12px; right:12px; z-index:1; box-shadow:0 6px 16px rgba(15,127,56,.35); width:40px; height:40px; border-radius:50%; display:grid; place-items:center;
   background:#0F7F38; color:#fff; transition:background-color .2s, transform .2s; }
 .c-wa svg{ width:21px; height:21px; }
 @media (hover:hover){ .c-wa:hover{ background:#0C6B2F; transform:scale(1.07); } }
@@ -384,23 +384,20 @@ body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 /* ── изделия: сетка продукции ────────────────────────────────── */
 .prod-grid{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:18px; }
 .p-card{
-  background:var(--panel); border:1px solid var(--line-d);
-  padding:18px 18px 16px; transition:border-color .3s, transform .3s;
-  position:relative;
+  position:relative; display:flex; flex-direction:column; overflow:hidden;
+  background:#fff; border-radius:12px; color:var(--ink);
+  box-shadow:0 14px 34px rgba(0,0,0,.28); transition:transform .3s, box-shadow .3s;
 }
-.p-card::before{
-  content:""; position:absolute; top:8px; left:8px; width:14px; height:14px;
-  border-top:1.5px solid rgba(255,194,28,.5); border-left:1.5px solid rgba(255,194,28,.5);
-  opacity:0; transition:opacity .3s;
+@media (hover:hover){
+  .p-card:hover{ transform:translateY(-6px); box-shadow:0 22px 44px rgba(0,0,0,.36); }
+  .p-card:hover .p-img img{ transform:scale(1.06); }
 }
-.p-card:hover{ border-color:rgba(255,194,28,.5); transform:translateY(-5px); }
-.p-card:hover::before{ opacity:1; }
-.p-img{ height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;
-  background:radial-gradient(closest-side, rgba(255,153,26,.11), transparent 75%); }
-.p-img img{ max-height:100%; width:auto; max-width:92%;
-  filter:drop-shadow(0 12px 20px rgba(0,0,0,.4)); transition:transform .35s; }
-.p-card:hover .p-img img{ transform:scale(1.06); }
-.p-card figcaption{ font-family:var(--ff-d); font-weight:600; font-size:15px; line-height:1.35; }
+.p-img{ height:200px; display:flex; align-items:center; justify-content:center;
+  background:radial-gradient(closest-side, rgba(255,194,28,.20), transparent 80%), linear-gradient(180deg,#F6F4EE,#E9E6DC); }
+.p-img img{ max-height:84%; width:auto; max-width:84%;
+  filter:drop-shadow(0 12px 16px rgba(16,22,30,.22)); transition:transform .35s; }
+.p-card figcaption, .f-card figcaption{ font-family:var(--ff-d); font-weight:700; font-size:15.5px; line-height:1.35;
+  color:var(--ink); text-align:center; padding:16px 16px 18px; margin-top:auto; }
 
 /* номенклатура-чипсы */
 .ig-note{
@@ -462,12 +459,13 @@ body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 .blist p{ font-size:15.5px; color:var(--muted-l); }
 
 .fut-gal{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; }
-.f-card{ background:#fff; border:1px solid var(--line-l); padding:14px; display:flex; flex-direction:column; }
-.f-card .c-foot{ margin-top:auto; padding-top:10px; }
+.f-card{ position:relative; display:flex; flex-direction:column; overflow:hidden; background:#fff;
+  border-radius:12px; box-shadow:0 10px 28px rgba(16,22,30,.10); transition:transform .3s, box-shadow .3s; }
+@media (hover:hover){ .f-card:hover{ transform:translateY(-5px); box-shadow:0 18px 38px rgba(16,22,30,.16); } }
 .f-card.f-big{ grid-column:1 / -1; }
-.f-card img{ margin-inline:auto; height:220px; width:100%; object-fit:contain; }
+.f-card img{ height:220px; width:100%; object-fit:contain; padding:16px;
+  background:linear-gradient(180deg,#F6F4EE,#E9E6DC); }
 .f-card.f-big img{ height:300px; }
-.f-card figcaption{ font-size:13.5px; font-weight:600; color:var(--muted-l); }
 
 /* ── гуммирование ────────────────────────────────────────────── */
 .gum-body{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:center; }
@@ -523,12 +521,13 @@ body.menu-open .wa-fab, body.lbx-open .wa-fab{ display:none; }
 .p3-cta{ background:var(--ink); border-color:var(--ink); color:var(--white); }
 
 /* ── преимущества ────────────────────────────────────────────── */
-.adv-grid{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:18px; }
+.adv-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; }
 .adv{
-  background:var(--panel); border:1px solid var(--line-d); padding:24px;
+  background:var(--panel); border:1px solid var(--line-d); padding:26px; border-radius:12px;
   transition:border-color .3s;
 }
 .adv:hover{ border-color:rgba(255,194,28,.4); }
+.adv-ic{ display:block; color:var(--yellow); margin-bottom:16px; }
 .adv h3{ font-size:17px; margin-bottom:8px; }
 .adv p{ font-size:14.5px; color:var(--muted-d); }
 .adv-rate{ display:flex; flex-direction:column; align-items:flex-start; gap:6px;
@@ -855,8 +854,7 @@ body.lbx-open{ overflow:hidden; }
   .facts{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px 18px; }
   .fut-stats{ grid-template-columns:1fr; }
   .fut-gal{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; }
-  .f-card{ padding:10px; }
-  .f-card img, .f-card.f-big img{ height:130px; }
+  .f-card img, .f-card.f-big img{ height:130px; padding:10px; }
   .steps{ grid-template-columns:1fr; }
   .adv-grid{ grid-template-columns:1fr; }
   .p3-grid{ grid-template-columns:1fr; }
@@ -872,12 +870,9 @@ body.lbx-open{ overflow:hidden; }
   .lbx-nav{ width:42px; height:56px; }
   .lbx-prev{ left:6px; } .lbx-next{ right:6px; }
   .prod-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; }
-  .p-card{ padding:12px 12px 12px; }
-  .p-img{ height:120px; margin-bottom:10px; }
-  .p-card figcaption{ font-size:13.5px; }
-  .c-foot{ gap:8px; }
-  .c-foot > span{ min-width:0; }
-  .p-card .c-wa{ position:absolute; top:8px; right:8px; }
+  .p-img{ height:130px; }
+  .p-card figcaption, .f-card figcaption{ font-size:13.5px; padding:12px 10px 14px; }
+  .c-wa{ top:8px; right:8px; }
   .c-wa{ width:36px; height:36px; }
   .c-wa svg{ width:19px; height:19px; }
   .cl-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
